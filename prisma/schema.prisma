@@ -1,0 +1,170 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Tabela dla Siły
+model Strength {
+  id          Int     @id @default(autoincrement())
+  value       Int
+  meleeThac0  Int
+  dmgBonus    Int
+  bashing     Int
+  weight      Int
+}
+
+// Tabela dla Zwinności
+model Agility {
+  id                     Int     @id @default(autoincrement())
+  value                  Int
+  rangedThac0            Int
+  ac                     Int
+  Otwieranie_ZamkowBonus      Int
+  Kradziez_KieszonkowaBonus   Int
+  Ciche_PoruszanieBonus       Int
+  Krycie_W_CieniuBonus        Int
+  Znajdywanie_PulapekBonus    Int
+  Rozstawianie_PulapekBonus   Int
+}
+
+// Tabela dla Wytrzymałości
+model Constitution {
+  id                    Int     @id @default(autoincrement())
+  value                 Int
+  hpPerLevelBonus       Int
+  intoxicationPerDrink  Int
+  fatigue               Int
+}
+
+// Tabela dla Inteligencji
+model Intelligence {
+  id                     Int     @id @default(autoincrement())
+  value                  Int
+  INTmaxSpellLevel       Int
+  INTspellPerLevel       Int
+  scribeSuccessRate      Int
+  INTlore                Int
+}
+
+// Tabela dla Mądrości
+model Wisdom {
+  id                     Int     @id @default(autoincrement())
+  value                  Int
+  extraSpellSlotlv1      Int
+  extraSpellSlotlv2      Int
+  extraSpellSlotlv3      Int
+  extraSpellSlotlv4      Int
+  WISlore                Int
+}
+
+model Charisma {
+  id              Int     @id @default(autoincrement())
+  value           Int
+  reaction        Int
+  buyDiscount     Int
+}
+
+
+// Tabela dla postaci (ogólne dane)
+model Character {
+  id                Int      @id @default(autoincrement())
+  gender            String?
+  portrait          String?
+  race              String?
+  classes           String?
+  subclasses        String?
+  characterName     String?
+  strength          Int?
+  agility           Int?
+  constitution      Int?
+  intelligence      Int?
+  wisdom            Int?
+  charisma          Int?
+  skills            WeaponProficiencys? @relation(fields: [skillsId], references: [id])
+  skillsId          Int?
+  skillsThief       ThievingAbilities?   @relation(fields: [skillsThiefId], references: [id])
+  skillsThiefId     Int?
+  melleThac0        Int?
+  dmgBonus          Int?
+  bashing           Int?
+  weight            Int?
+  rangedThac0       Int?
+  AC                Int?
+  Kradziez_KieszonkowaBonus Int?
+  Otwieranie_ZamkowBonus    Int?
+  Znajdywanie_PulapekBonus   Int?
+  Ciche_PoruszanieBonus    Int?
+  Krycie_W_CieniuBonus   Int?
+  Rozstawianie_Pulapek    Int?
+  HPdice            Int?
+  HP                Int?
+  HPperLvBonus      Int?
+  IntoxicationPerDrink Int?
+  fatigue           Int?
+  INTmaxSpellLevel  Int?
+  INTspellPerLevel  Int?
+  scribeSuccessRate Int?
+  INTlore           Int?
+  extraSpellSlotlv1 Int?
+  extraSpellSlotlv2 Int?
+  extraSpellSlotlv3 Int?
+  extraSpellSlotlv4 Int?
+  WISlore           Int?
+  reaction          Int?
+  buyDiscount       Int?
+}
+
+// Tabela dla umiejętności broni
+model WeaponProficiencys {
+  id                        Int     @id @default(autoincrement())
+  MieczePoltorareczne        Int
+  MieczeDlugie               Int
+  MieczeKrotkie              Int
+  Topory                     Int
+  MieczeDworeczne            Int
+  Katana                     Int
+  Scimtar                    Int
+  Sztylety                   Int
+  MlotyWojenne               Int
+  Maczugi                    Int
+  Wlocznie                   Int
+  Halabarda                  Int
+  Korbacze                   Int
+  Wiekiery                   Int
+  KijeBojowe                 Int
+  Kusze                      Int
+  DlugieLuki                 Int
+  KrotkieLuki                Int
+  Strzalki                   Int
+  Proce                      Int
+  StylBroniDworecznych       Int
+  StylMieczaITarczy          Int
+  StylMieczaJednorecznego    Int
+  StylDwochBroni             Int
+
+  Character Character[]
+}
+
+// Tabela dla umiejętności złodziejskich
+model ThievingAbilities {
+  id                        Int     @id @default(autoincrement())
+  Otwieranie_Zamkow          Int
+  Kradziez_Kieszonkowa      Int
+  Ciche_Poruszanie           Int
+  Krycie_W_Cieniu            Int
+  Znajdywanie_Pulapek       Int
+  Wykrywanie_Iluzji          Int
+  Rozstawianie_Pulapek      Int
+
+  Character Character[]
+}
