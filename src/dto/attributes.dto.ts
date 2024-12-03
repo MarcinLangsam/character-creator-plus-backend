@@ -53,3 +53,52 @@ export interface CharismaResponse {
   reaction: number;
   buyDiscount: number;
 }
+
+export interface AlignmentResponse {
+  id: number;
+  alignment: String;
+  number: String;
+}
+
+export interface ProficiencysToSubclass {
+  id: number;
+  subclass: string;
+  MieczePoltorareczne: number;
+  MieczeDlugie: number;
+  MieczeKrotkie: number;
+  Topory: number;
+  MieczeObureczne: number;
+  Katany: number;
+  SejmitarWakizashiNinjaTo: number;
+  Sztylety: number;
+  MlotyBojowe: number;
+  Maczugi: number;
+  Wlocznie: number;
+  Halabarda: number;
+  CepyBojoweMorgernszterny: number;
+  Wiekiery: number;
+  Kije: number;
+  Kusze: number;
+  DlugieLuki: number;
+  KrotkieLuki: number;
+  Strzalki: number;
+  Proce: number;
+  StylWalkiBroniaDwureczna: number;
+  StylWalkiMieczemITarcza: number;
+  StylWalkiJednaBronia: number;
+  StylWalkiDwiemaBronmi: number;
+  skillPoints: number,
+}
+
+export interface ThievingAbilitiesToSubclass {
+  id: number;
+  subclass: String;
+  Otwieranie_Zamkow: number;
+  Kradziez_Kieszonkowa: number;
+  Ciche_Poruszanie: number;
+  Krycie_W_Cieniu: number;
+  Znajdywanie_Pulapek: number;
+  Wykrywanie_Iluzji: number;
+  Rozstawianie_Pulapek: number;
+  skillPointsThief: number;
+}

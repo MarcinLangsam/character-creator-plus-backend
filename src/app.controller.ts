@@ -3,7 +3,7 @@ import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
 import { PrismaService } from './prisma.service';
-import { AgilityResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse } from './dto/attributes.dto';
+import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass } from './dto/attributes.dto';
 
 const prisma = new PrismaClient();
 
@@ -45,6 +45,24 @@ export class AppController {
   async getCharisma(): Promise<CharismaResponse[]> {
     const Charisma = await this.prisma.charisma.findMany()
     return Charisma
+  }
+
+  @Get('/alignment')
+  async getAlignment(): Promise<AlignmentResponse[]> {
+    const Alignment = await this.prisma.alignment.findMany()
+    return Alignment
+  }
+
+  @Get('/proficiencystosubclassdata')
+  async getProficiencysToSubclass(): Promise<ProficiencysToSubclass[]> {
+    const ProficiencysToSubclass = await this.prisma.proficiencysToSubclass.findMany()
+    return ProficiencysToSubclass
+  }
+
+  @Get('/thievingabilitiestosubclassdata')
+  async getThievingAbilitiesToSubclass(): Promise<ThievingAbilitiesToSubclass[]> {
+    const ThievingAbilitiesToSubclass = await this.prisma.thievingAbilitiesToSubclass.findMany()
+    return ThievingAbilitiesToSubclass
   }
 
 }

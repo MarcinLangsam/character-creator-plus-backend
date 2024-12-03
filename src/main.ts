@@ -229,6 +229,165 @@ async function insertCharismaData() {
   }
 }
 
+
+async function insertAlignmentData() {
+  const alignmentData = [
+    { alignment: "Praworządny Dobry", number: "0x11" },
+    { alignment: "Praworządny Neutralny", number: "0x12" },
+    { alignment: "Praworządny Zły", number: "0x13" },
+    { alignment: "Neutralny Dobry", number: "0x21" },
+    { alignment: "Neutralny", number: "0x22" },
+    { alignment: "Neutralny Zły", number: "0x23" },
+    { alignment: "Chaotyczny Dobry", number: "0x31" },
+    { alignment: "Chaotyczny Neutralny", number: "0x32" },
+    { alignment: "Chaotyczny Zły", number: "0x33" },
+  ];
+
+  for (const data of alignmentData) {
+    await prisma.alignment.create({
+      data: {
+        alignment: data.alignment,
+        number: data.number,
+      }
+    });
+  }
+}
+
+
+async function insertProficiencysToSubclassData() {
+  const proficiencysToSubclassData = [
+    { subclass: "Wojownik",                MieczePółtoraręczne: 5, MieczeDługie: 5, MieczeKrótkie: 5, Topory: 5, MieczeOburęczne: 5, Katany: 5, SejmitarWakizashiNinjaTo: 5, Sztylety: 5, MłotyBojowe: 5, Maczugi: 5, Włócznie: 5, Halabarda: 5, CepyBojoweMorgernszterny: 5, Wiekiery: 5, Kije: 5, Kusze: 5, DługieŁuki: 5, KrótkieŁuki: 5, Strzałki: 5, Proce: 5, StylWalkiBroniąDwuręczną: 5, StylWalkiMieczemITarczą: 5, StylWalkiJednąBronią: 5, StylWalkiDwiemaBrońmi: 5, skillPoints: 6 },
+    { subclass: "Berserker",               MieczePółtoraręczne: 5, MieczeDługie: 5, MieczeKrótkie: 5, Topory: 5, MieczeOburęczne: 5, Katany: 5, SejmitarWakizashiNinjaTo: 5, Sztylety: 5, MłotyBojowe: 5, Maczugi: 5, Włócznie: 5, Halabarda: 5, CepyBojoweMorgernszterny: 5, Wiekiery: 5, Kije: 5, Kusze: 1, DługieŁuki: 1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 5, StylWalkiMieczemITarczą: 5, StylWalkiJednąBronią: 5, StylWalkiDwiemaBrońmi: 5, skillPoints: 6 },
+    { subclass: "Zabójca_Magów",           MieczePółtoraręczne: 5, MieczeDługie: 5, MieczeKrótkie: 5, Topory: 5, MieczeOburęczne: 5, Katany: 5, SejmitarWakizashiNinjaTo: 5, Sztylety: 5, MłotyBojowe: 5, Maczugi: 5, Włócznie: 5, Halabarda: 5, CepyBojoweMorgernszterny: 5, Wiekiery: 5, Kije: 5, Kusze: 5, DługieŁuki: 5, KrótkieŁuki: 5, Strzałki: 5, Proce: 5, StylWalkiBroniąDwuręczną: 5, StylWalkiMieczemITarczą: 5, StylWalkiJednąBronią: 5, StylWalkiDwiemaBrońmi: 5, skillPoints: 6 },
+    { subclass: "Kensai",                  MieczePółtoraręczne: 5, MieczeDługie: 5, MieczeKrótkie: 5, Topory: 5, MieczeOburęczne: 5, Katany: 5, SejmitarWakizashiNinjaTo: 5, Sztylety: 5, MłotyBojowe: 5, Maczugi: 5, Włócznie: 5, Halabarda: 5, CepyBojoweMorgernszterny: 5, Wiekiery: 5, Kije: 5, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: -1, Proce: -1, StylWalkiBroniąDwuręczną: 5, StylWalkiMieczemITarczą: 5, StylWalkiJednąBronią: 5, StylWalkiDwiemaBrońmi: 5, skillPoints: 6 },
+    { subclass: "Krasnoludzki_Obrońca",    MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 4, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 4, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 6 },
+    { subclass: "Barbarzyńca",             MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 2, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 2, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 6 },
+    { subclass: "Łowca",                   MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 2, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 2, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 4 },
+    { subclass: "Łucznik",                 MieczePółtoraręczne: 1, MieczeDługie: 1, MieczeKrótkie: 1, Topory: 1, MieczeOburęczne: 1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, MłotyBojowe: 1, Maczugi: 1, Włócznie: 1, Halabarda: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Kusze: 5, DługieŁuki: 5, KrótkieŁuki: 5, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 3, skillPoints: 4 },
+    { subclass: "Tropiciel",               MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 2, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 2, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 3, skillPoints: 4 },
+    { subclass: "Władca_Zwierząt",         MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: -1, MłotyBojowe: -1, Maczugi: 2, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 4 },
+    { subclass: "Paladyn",                 MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 2, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 2, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 4 },
+    { subclass: "Kawalerzysta",            MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 2, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 2, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: -1, Proce: -1, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 4 },
+    { subclass: "Inkwizytor",              MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 2, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 2, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 4 },
+    { subclass: "Łowca_Nieumarłych",       MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 2, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 2, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 4 },
+    { subclass: "Czarny_Strażnik",         MieczePółtoraręczne: 2, MieczeDługie: 2, MieczeKrótkie: 2, Topory: 2, MieczeOburęczne: 2, Katany: 2, SejmitarWakizashiNinjaTo: 2, Sztylety: 2, MłotyBojowe: 2, Maczugi: 2, Włócznie: 2, Halabarda: 2, CepyBojoweMorgernszterny: 2, Wiekiery: 2, Kije: 2, Kusze: 2, DługieŁuki: 2, KrótkieŁuki: 2, Strzałki: 2, Proce: 2, StylWalkiBroniąDwuręczną: 2, StylWalkiMieczemITarczą: 2, StylWalkiJednąBronią: 2, StylWalkiDwiemaBrońmi: 2, skillPoints: 4 },
+    { subclass: "Kapłan",                  MłotyBojowe: 1, Maczugi: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: -1, Włócznie: -1, Halabarda: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: -1, skillPoints: 2 },
+    { subclass: "Kapłan_Talosa",           MłotyBojowe: 1, Maczugi: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: -1, Włócznie: -1, Halabarda: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: -1, skillPoints: 2 },
+    { subclass: "Kapłan_Helma",            MłotyBojowe: 1, Maczugi: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: -1, Włócznie: -1, Halabarda: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: -1, skillPoints: 2 },
+    { subclass: "Kapłan_Lathandera",       MłotyBojowe: 1, Maczugi: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: -1, Włócznie: -1, Halabarda: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: -1, skillPoints: 2 },
+    { subclass: "Kapłan_Tyra",             MłotyBojowe: 1, Maczugi: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: -1, Włócznie: -1, Halabarda: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: -1, skillPoints: 2 },
+    { subclass: "Kapłan_Tempusa",          MłotyBojowe: 1, Maczugi: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: -1, Włócznie: -1, Halabarda: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: -1, skillPoints: 2 },
+    { subclass: "Druid",                   SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Włócznie: 1, Maczugi: 1, Strzałki: 1, Kije: 1, Proce: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 2 },
+    { subclass: "Totemiczny_Druid",        SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Włócznie: 1, Maczugi: 1, Strzałki: 1, Kije: 1, Proce: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 2 },
+    { subclass: "Zmiennokształtny",        SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Włócznie: 1, Maczugi: 1, Strzałki: 1, Kije: 1, Proce: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 2 },
+    { subclass: "Mściciel",                SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Włócznie: 1, Maczugi: 1, Strzałki: 1, Kije: 1, Proce: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 2 },
+    { subclass: "Mag",                     Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Mag_Specjalista",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Dziki_Mag",               Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Złodziej",                MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Maczugi: 1, Włócznie: -1, Kije: 1, Kusze: 1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeOburęczne: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, DługieŁuki: -1,  skillPoints: 2 },
+    { subclass: "Zabójca",                 MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Maczugi: 1, Włócznie: -1, Kije: 1, Kusze: 1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeOburęczne: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, DługieŁuki: -1,  skillPoints: 2 },
+    { subclass: "Łowca_Nagród",            MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Maczugi: 1, Włócznie: -1, Kije: 1, Kusze: 1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeOburęczne: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, DługieŁuki: -1,  skillPoints: 2 },
+    { subclass: "Zawadiaka",               MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Maczugi: 1, Włócznie: -1, Kije: 1, Kusze: 1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeOburęczne: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, DługieŁuki: -1,  skillPoints: 2 },
+    { subclass: "Tancerz_Cieni",           MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Maczugi: 1, Włócznie: -1, Kije: 1, Kusze: 1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeOburęczne: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, DługieŁuki: -1, skillPoints: 2 },
+    { subclass: "Bard",                    MieczePółtoraręczne: 1, MieczeDługie: 1, MieczeKrótkie: 1, Topory: 1, MieczeOburęczne: 1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, MłotyBojowe: 1, Maczugi: 1, Włócznie: 1, Halabarda: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Kusze: 1, DługieŁuki: -1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 2 },
+    { subclass: "Fechmistrz",              MieczePółtoraręczne: 1, MieczeDługie: 1, MieczeKrótkie: 1, Topory: 1, MieczeOburęczne: 1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, MłotyBojowe: 1, Maczugi: 1, Włócznie: 1, Halabarda: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Kusze: 1, DługieŁuki: -1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 2 },
+    { subclass: "Błazen",                  MieczePółtoraręczne: 1, MieczeDługie: 1, MieczeKrótkie: 1, Topory: 1, MieczeOburęczne: 1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, MłotyBojowe: 1, Maczugi: 1, Włócznie: 1, Halabarda: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Kusze: 1, DługieŁuki: -1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 2 },
+    { subclass: "Skald",                   MieczePółtoraręczne: 1, MieczeDługie: 1, MieczeKrótkie: 1, Topory: 1, MieczeOburęczne: 1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, MłotyBojowe: 1, Maczugi: 1, Włócznie: 1, Halabarda: 1, CepyBojoweMorgernszterny: 1, Wiekiery: 1, Kije: 1, Kusze: 1, DługieŁuki: -1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 2 },
+    { subclass: "Czarownik",               MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: 1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: 1, Proce: 1, Kije: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 1 },
+    { subclass: "Uczeń_Smoka",             MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: 1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: 1, Proce: 1, Kije: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 1 },
+    { subclass: "Mnich",                   MieczePółtoraręczne: -1, MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, MieczeOburęczne: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, MłotyBojowe: -1, Maczugi: 1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kije: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 3 },
+    { subclass: "Mnich_Ciemnego_Księżyca", MieczePółtoraręczne: -1, MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, MieczeOburęczne: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, MłotyBojowe: -1, Maczugi: 1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kije: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 3 },
+    { subclass: "Mnich_Słonecznej_Duszy",  MieczePółtoraręczne: -1, MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, MieczeOburęczne: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, MłotyBojowe: -1, Maczugi: 1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kije: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 3 },
+    { subclass: "Szaman",                  MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, Sztylety: 1, MłotyBojowe: -1, Maczugi: 1, Włócznie: 1, Topory: 1, Kije: 1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, Strzałki: 1, Proce: 1, KrótkieŁuki: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, skillPoints: 3 },
+  ];
+
+  for (const data of proficiencysToSubclassData) {
+    await prisma.proficiencysToSubclass.create({
+      data: {
+        subclass: data.subclass,
+        MieczePoltorareczne: data.MieczePółtoraręczne,
+        MieczeDlugie: data.MieczeDługie,
+        MieczeKrotkie: data.MieczeKrótkie,
+        Topory: data.Topory,
+        MieczeObureczne: data.MieczeOburęczne,
+        Katany: data.Katany,
+        SejmitarWakizashiNinjaTo: data.SejmitarWakizashiNinjaTo,
+        Sztylety: data.Sztylety,
+        MlotyBojowe: data.MłotyBojowe,
+        Maczugi: data.Maczugi,
+        Wlocznie: data.Włócznie,
+        Halabarda: data.Halabarda,
+        CepyBojoweMorgernszterny: data.CepyBojoweMorgernszterny,
+        Wiekiery: data.Wiekiery,
+        Kije: data.Kije,
+        Kusze: data.Kusze,
+        DlugieLuki: data.DługieŁuki,
+        KrotkieLuki: data.KrótkieŁuki,
+        Strzalki: data.Strzałki,
+        Proce: data.Proce,
+        StylWalkiBroniaDwureczna: data.StylWalkiBroniąDwuręczną,
+        StylWalkiMieczemITarcza: data.StylWalkiMieczemITarczą,
+        StylWalkiJednaBronia: data.StylWalkiJednąBronią,
+        StylWalkiDwiemaBronmi: data.StylWalkiDwiemaBrońmi,
+        skillPoints: data.skillPoints
+      }
+    });
+  }
+}
+
+async function insertThievingAbilitiesToSubclassData() {
+  const thievingAbilitiesToSubclassData = [
+    { subclass: "Łowca",                   Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: -1, Ciche_Poruszanie: 55, Krycie_W_Cieniu: 55, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    { subclass: "Łucznik",                 Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: -1, Ciche_Poruszanie: 55, Krycie_W_Cieniu: 55, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    { subclass: "Tropiciel",               Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: -1, Ciche_Poruszanie: 55, Krycie_W_Cieniu: 55, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    { subclass: "Władca_Zwierząt",         Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: -1, Ciche_Poruszanie: 55, Krycie_W_Cieniu: 55, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    { subclass: "Złodziej",                Otwieranie_Zamków: 0, Kradzież_Kieszonkowa: 0, Ciche_Poruszanie: 0, Krycie_W_Cieniu: 0, Znajdywanie_Pułapek: 0, Wykrywanie_Iluzji: 0, Rozstawianie_Pułapek: 0, skillPointsThief: 215 },
+    { subclass: "Zabójca",                 Otwieranie_Zamków: 0, Kradzież_Kieszonkowa: 0, Ciche_Poruszanie: 0, Krycie_W_Cieniu: 0, Znajdywanie_Pułapek: 0, Wykrywanie_Iluzji: 0, Rozstawianie_Pułapek: 0, skillPointsThief: 215 },
+    { subclass: "Łowca_Nagród",            Otwieranie_Zamków: 0, Kradzież_Kieszonkowa: 0, Ciche_Poruszanie: 0, Krycie_W_Cieniu: 0, Znajdywanie_Pułapek: 0, Wykrywanie_Iluzji: 0, Rozstawianie_Pułapek: 0, skillPointsThief: 215 },
+    { subclass: "Zawadiaka",               Otwieranie_Zamków: 0, Kradzież_Kieszonkowa: 0, Ciche_Poruszanie: 0, Krycie_W_Cieniu: 0, Znajdywanie_Pułapek: 0, Wykrywanie_Iluzji: 0, Rozstawianie_Pułapek: 0, skillPointsThief: 215 },
+    { subclass: "Tancerz_Cieni",           Otwieranie_Zamków: 0, Kradzież_Kieszonkowa: 0, Ciche_Poruszanie: 0, Krycie_W_Cieniu: 0, Znajdywanie_Pułapek: 0, Wykrywanie_Iluzji: 0, Rozstawianie_Pułapek: 0, skillPointsThief: 215 },
+    { subclass: "Bard",                    Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: 60, Ciche_Poruszanie: -1, Krycie_W_Cieniu: -1, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    { subclass: "Fechmistrz",              Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: 60, Ciche_Poruszanie: -1, Krycie_W_Cieniu: -1, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    { subclass: "Błazen",                  Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: 60, Ciche_Poruszanie: -1, Krycie_W_Cieniu: -1, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    { subclass: "Skald",                   Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: 60, Ciche_Poruszanie: -1, Krycie_W_Cieniu: -1, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    { subclass: "Mnich",                   Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: -1, Ciche_Poruszanie: -1, Krycie_W_Cieniu: 0, Znajdywanie_Pułapek: 0, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 60 },
+    { subclass: "Mnich_Ciemnego_Księżyca", Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: -1, Ciche_Poruszanie: 0, Krycie_W_Cieniu: 0, Znajdywanie_Pułapek: 0, Wykrywanie_Iluzji: 0, Rozstawianie_Pułapek: -1, skillPointsThief: 60 },
+    { subclass: "Mnich_Słonecznej_Duszy",  Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: -1, Ciche_Poruszanie: 0, Krycie_W_Cieniu: 0, Znajdywanie_Pułapek: 0, Wykrywanie_Iluzji: -1, Rozstawianie_Pułapek: -1, skillPointsThief: 60 },
+    { subclass: "Szaman",                  Otwieranie_Zamków: -1, Kradzież_Kieszonkowa: -1, Ciche_Poruszanie: -1, Krycie_W_Cieniu: -1, Znajdywanie_Pułapek: -1, Wykrywanie_Iluzji: 48, Rozstawianie_Pułapek: -1, skillPointsThief: 0 },
+    
+    ];
+
+  for (const data of thievingAbilitiesToSubclassData) {
+    await prisma.thievingAbilitiesToSubclass.create({
+      data: {
+        subclass: data.subclass,
+        Otwieranie_Zamkow: data.Otwieranie_Zamków,
+        Kradziez_Kieszonkowa: data.Kradzież_Kieszonkowa,
+        Ciche_Poruszanie: data.Ciche_Poruszanie,
+        Krycie_W_Cieniu: data.Krycie_W_Cieniu,
+        Znajdywanie_Pulapek: data.Znajdywanie_Pułapek,
+        Wykrywanie_Iluzji: data.Wykrywanie_Iluzji,
+        Rozstawianie_Pulapek: data.Rozstawianie_Pułapek,
+        skillPointsThief: data.skillPointsThief,
+      }
+    });
+  }
+}
+
+async function fillDataBase() {
+  await insertStrengthData();
+  await insertAgilityData();
+  await insertConstitutionData();
+  await insertIntelligenceData();
+  await insertWisdomData();
+  await insertCharismaData();
+  await insertAlignmentData();
+  await insertProficiencysToSubclassData();
+  await insertThievingAbilitiesToSubclassData();
+}
+
+
+
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
@@ -236,12 +395,7 @@ async function bootstrap() {
 
   await app.listen(process.env.PORT ?? 3000);
 
-  //await insertStrengthData();
-  //await insertAgilityData();
-  //await insertConstitutionData();
-  //await insertIntelligenceData();
-  //await insertWisdomData();
-  //await insertCharismaData();
+  //fillDataBase()
 
 }
 bootstrap();

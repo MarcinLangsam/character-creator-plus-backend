@@ -1,6 +1,6 @@
 generator client {
   provider = "prisma-client-js"
-  output = "../../node_modules/.prisma/client"
+  output = "../node_modules/.prisma/client"
 }
 
 datasource db {
@@ -162,4 +162,71 @@ model ThievingAbilities {
   Rozstawianie_Pulapek      Int
 
   Character Character[]
+}
+
+// model Gender {
+//   id          Int       @id @default(autoincrement())
+//   gender      String
+//   number      Int
+// }
+
+model Alignment {
+  id             Int       @id @default(autoincrement())
+  alignment      String
+  number         String
+}
+
+// model Race {
+//   id          Int       @id @default(autoincrement())
+//   race        String
+//   number      Int
+// }
+
+// model Class {
+//   id          Int       @id @default(autoincrement())
+//   class        String
+//   number      Int
+// }
+
+model ProficiencysToSubclass {
+  id                          Int       @id @default(autoincrement())
+  subclass                    String
+  MieczePoltorareczne         Int
+  MieczeDlugie                Int
+  MieczeKrotkie               Int
+  Topory                      Int
+  MieczeObureczne             Int
+  Katany                      Int
+  SejmitarWakizashiNinjaTo    Int
+  Sztylety                    Int
+  MlotyBojowe                 Int
+  Maczugi                     Int
+  Wlocznie                    Int
+  Halabarda                   Int
+  CepyBojoweMorgernszterny    Int
+  Wiekiery                    Int
+  Kije                        Int
+  Kusze                       Int
+  DlugieLuki                  Int
+  KrotkieLuki                 Int
+  Strzalki                    Int
+  Proce                       Int
+  StylWalkiBroniaDwureczna    Int
+  StylWalkiMieczemITarcza     Int
+  StylWalkiJednaBronia        Int
+  StylWalkiDwiemaBronmi       Int
+  skillPoints                 Int
+}
+
+model ThievingAbilitiesToSubclass {
+  id                        Int       @id @default(autoincrement())
+  subclass                  String
+  Otwieranie_Zamkow         Int
+  Kradziez_Kieszonkowa      Int
+  Ciche_Poruszanie          Int
+  Krycie_W_Cieniu           Int
+  Znajdywanie_Pulapek       Int
+  Wykrywanie_Iluzji         Int
+  Rozstawianie_Pulapek      Int
+  skillPointsThief          Int
 }
