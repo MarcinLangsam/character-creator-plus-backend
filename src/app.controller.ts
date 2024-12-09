@@ -1,9 +1,11 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Param, Res, NotFoundException, StreamableFile } from '@nestjs/common';
 import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
 import { PrismaService } from './prisma.service';
 import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass } from './dto/attributes.dto';
+import { join } from 'path';
+import { createReadStream, existsSync } from 'fs';
 
 const prisma = new PrismaClient();
 
@@ -65,4 +67,28 @@ export class AppController {
     return ThievingAbilitiesToSubclass
   }
 
+  @Get('test') // Endpoint na sztywno
+  async getTestFile(@Res() res: Response) {
+    // Ścieżka do pliku na sztywno
+    const filePath = join(__dirname, '..', '..', 'uploads', 'wojownik', 'test.txt');
+
+    // Sprawdź, czy plik istnieje
+    if (!existsSync(filePath)) {
+      throw new NotFoundException('File not found');
+    }
+
+    // Otwórz strumień pliku i zwróć go w odpowiedzi
+    const fileStream = createReadStream(filePath);
+    res.setHeader('Content-Disposition', `attachment; filename=test.txt`);
+    return fileStream.pipe(res);
+  }
+
+  @Get("/:className/:subclassName")
+  getFile(
+    @Param('className') className: string,
+    @Param('subclassName') subclassName: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', className, subclassName));
+    return new StreamableFile(file);
+  }
 }
