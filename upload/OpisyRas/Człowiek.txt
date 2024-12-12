@@ -1,0 +1,8 @@
+LUDZIE: Ludzie są dominującą rasą Faerunu. Przewodzą najznaczniejszym imperiom i królestwom Zapomnianych Krain. Są chyba najbardziej tolerancyjnych i towarzyskich ze wszystkich ras, z wyjątkiem może niziołków. Ludzie mają tylko jedną zdolność specjalną - mogą zależeć do dowolnej klasy. Ludzie to jedyna rasa mogąca wykorzystać dwuklasowość, jednak nie mogą być wielkoklasowcami.
+
+Zalety:
+- może wybrać każdą klasę
+- może wykorzystać dwuklasowość
+
+Wady:
+- nie może wykorzystać wielkoklasowości

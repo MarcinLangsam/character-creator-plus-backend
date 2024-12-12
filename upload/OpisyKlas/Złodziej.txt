@@ -1,0 +1,9 @@
+CECHY KLASOWE:
+- Nie może nosić zbroi cięższej niż skórzana ćwiekowana, oraz tarczy większej niż w puklerz,
+- Może używać tylko: miecz długi, miecz krótki, katana, sejmitar, sztylet, maczuga, kij, krótki łuk, kusza, strzałka, proca.
+- Może osiągnąć wyszkolenie(1 punkt) w dowolnym rodzaju broni,
+- Może osiągnąć wyszkolenie(1 punkt) do każdego stylu walki
+- Ma dostęp do umiejętności złodziejskich oraz ciosu w plecy
+- Nie może być praworządny dobry
+
+KOŚĆ ZDROWIA: K6

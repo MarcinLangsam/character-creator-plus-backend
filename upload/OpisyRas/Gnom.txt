@@ -1,0 +1,7 @@
+GNOMY: Spokrwnione z krasnoludami gnomy są znacznie mniejsze niż ich odlegli kuzyni. Z dumą również zauważają, że nie są tak "krągłe" ja ich brodaci bracia. Większoć gnomów ma ciemną lub brązową skórę, białe włosy i duże nosy. Charakteryzują się dośc niezwykłym poczuciem homoru i przepadają za płataniem psikusów. Ich miłość do natury przewyższa jedynie wuelbienie szachetymi kamieniami i biżuterii. W Krainach isnieją dwie podrasy gnomów: skaliste oraz głębinowe (svirfnebliny).
+
+Cechy:
+- +2 do rzutów obornnych oprzeciw berłom/laskom/różdżkom i przeciw czarom, dodatkowe premie do rzutów obronnych opartch na Kondycji.
+- Infrawizja,
+- +5% do Otwierania zamków, +10% do Znajdywania pułapek, +5% do Cichego chodzenia, +5% do Krycia się w cieniu, +10% do Wykrucia Iluzji, +5% do Zastawiania pułapek,
+- +1 Inteligencji, -1 Mądrościm

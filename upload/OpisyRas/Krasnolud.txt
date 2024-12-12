@@ -1,0 +1,7 @@
+KRASNOLUDY: Krasnoludy są niskimi, krępymi osobnikami, łatwymi do rozpoznania po wzroście i posturze. Mają czerstwe policzki, ciemne oczy i takież włosy. Zazwyczaj są uparte i  małomówne. Z chęcią oddają się ciężkiej pracy, nie posiadają za to za grosz poczucia humoru. Lubują się w piwie i miodzie, ale nade wszystko kochają  złoto. W Krainach żyją cztery różne odłamy tej rasy: krasnoludy tarczowe, złote, dzikie i duergarowie. 
+
+Cechy:
+- +2 do rzutów obronnych przeciw paraliżowi/truciznom/śmierci/berłom/laską/różdżkami i przeciw czarom oraz dodatkowe premie do rzutów obronnych opartych na Kondycji.
+- Infrawizja
+- +10% do Otwierania zamków, +15% do Znajdowania Pułapek, +5% do Wykrycua Iluzji, +10% dp Zastawiania pułapek.
+- +1 Kondycji, -1 Zręczności, -2 Charyzmy,

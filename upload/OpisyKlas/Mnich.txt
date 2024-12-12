@@ -1,0 +1,14 @@
+CECHY KLASOWE:
+- Nie może nosić żadnej zbroi
+- Może używać tylko jednoręcznych broni dostępnych dla złodzieji
+- Może osiągnąć wyszkolenie(1 punkt) w dostępnych rodzaju broni,
+- Może osiągnąć wyszkolenie(1 punkt) tylko do stylu walki bronią jednoręczną
+- Zwiększona szybkość poruszania o 2, wzrasta o kolejny punkt co 5 poziomów
+- Może wykonać jeden atak pięścią na rundę i zyskuje dodatkowe 1/2 ataki co trzy poziomy oraz polepsza się atak pięścią
+- Mnicha uzyskuje +2 do rzutów obronnych przeciw czarom
+- +1 do KP przeciw pociskom co 3 poziomy,
+- Bazowe KP to 9 i wzrasta o 1 co dwa poziomy,
+- Może używać Ogłuszającego ciosu
+-Musi mieć charakter praworządny
+
+KOŚĆ ZDROWIA: K8

@@ -1,0 +1,6 @@
+PÓŁELFY: Półelfy to wynik zmieszania krwi ludzi i elfów. Są bardzo przystojne i łączą w sobie zalety obu tych ras. Zazwyczaj posiadają ciekawość,  pomysłowość i ambicje swych ludzkich przodków z wyrafinowanymi zmysłami, miłością do natury i artystycznymi zdolnościami elfów. 
+
+Cechy:
+- 30% odporności przeciw zauroczeniom i magii usypiającej,
+- Infrawizja,
+- +10% do Kradzieży kieszonkowej, +5% do Krycia się w cieniu.

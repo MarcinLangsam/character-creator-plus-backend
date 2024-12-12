@@ -1,0 +1,8 @@
+ELFY: Elfy są nieco niższe i szczuplejsze od ludzi. Twarze mają piękne i delikatne, a język melodyjny. Często uważa się je za lekkomyślne i oddalone od innych ras. Elfy interesuje piękno natury, taniec, zabawa, śpiewy i inne tym podobne rzeczy. Mają wyrafinowane poczucie humoru i także same pieści oraz poezję. W Krainach żyje sześć różnych odłamów tej rasy, elfy: złote, księżycowe, dzikie, morskie, mroczne (drowy) i skrzydlate (avariele).
+
+Cechy:
+- 90% odporności przeciwko zauroczeniom i magii usypiającej,
+- Infrawizja,
+- +1 do TraK0 podczas posługiwania się łukami oraz mieczami długimi i krótkimi,
+- -5% do Otwierania zamków, +5% do Kradzieży kieszonkowej, +5% do Cichego chodzenia, +10% do Krycia się w cieniu,
+- +1 Zręczności, -1 Kondycji,

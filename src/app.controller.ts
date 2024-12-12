@@ -1,4 +1,4 @@
-import { Controller, Get, Param, Res, NotFoundException, StreamableFile } from '@nestjs/common';
+import { Controller, Get, Param, Res, NotFoundException, StreamableFile, Post, Body } from '@nestjs/common';
 import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
@@ -90,5 +90,133 @@ export class AppController {
   ): StreamableFile {
     const file = createReadStream(join(process.cwd(), 'upload', className, subclassName));
     return new StreamableFile(file);
+  }
+
+  @Get("/OpisyRas/:race")
+  getRaceDescription(
+    @Param('race') race: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', race));
+    return new StreamableFile(file);
+  }
+
+  @Get("/:OpisyKlas/:className")
+  getClassDescription(
+    @Param('className') className: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', className));
+    return new StreamableFile(file);
+  }
+
+  @Post('sendCharacter')
+  async createCharacter(@Body() characterData: any) {
+    const {
+      name,
+      gender,
+      portrait,
+      race,
+      classes,
+      subclasses,
+      attributes,
+      skills,
+      //skillsThief,
+      melleThac0,
+      dmgBonus,
+      bashing,
+      weight,
+
+      rangedThac0,
+      AC,
+      Kradziez_KieszonkowaBonus, 
+      Otwieranie_ZamkowBonus,
+      Znajdywanie_PulapekBonus,
+      Ciche_PoruszanieBonus,
+      Krycie_W_CieniuBonus,
+      Rozstawianie_PulapekBonus,
+
+      HPdice,
+      HP,
+
+      HPperLvBonus,
+      IntoxicationPerDrink,
+      fatigue,
+
+      INTmaxSpellLevel,
+      INTspellPerLevel,
+      scribeSuccessRate,
+      INTlore,
+
+      extraSpellSlotlv1,
+      extraSpellSlotlv2,
+      extraSpellSlotlv3,
+      extraSpellSlotlv4,
+      WISlore,
+
+      reaction,
+      buyDiscount,
+    } = characterData;
+
+     const weaponProficiencys = await this.prisma.weaponProficiencys.create({
+       data: {...skills},
+     })
+
+     //const thievingAbilities = await this.prisma.thievingAbilities.create({
+     //  ...skillsThief,
+     //})
+
+    const character = await this.prisma.character.create({
+      data: {
+        name,
+        gender,
+        portrait,
+        race,
+        classes,
+        subclasses,
+        strength: attributes.strength,
+        agility: attributes.agility,
+        constitution: attributes.constitution,
+        intelligence: attributes.intelligence,
+        wisdom: attributes.wisdom,
+        charisma: attributes.charisma,
+        skillsId: weaponProficiencys.id,
+        //skillsThiefId: thievingAbilities.id,
+        melleThac0,
+        dmgBonus,
+        bashing,
+        weight,
+
+        rangedThac0,
+        AC,
+        Kradziez_KieszonkowaBonus, 
+        Otwieranie_ZamkowBonus,
+        Znajdywanie_PulapekBonus,
+        Ciche_PoruszanieBonus,
+        Krycie_W_CieniuBonus,
+        Rozstawianie_PulapekBonus,
+
+        HPdice,
+        HP,
+
+        HPperLvBonus,
+        IntoxicationPerDrink,
+        fatigue,
+
+        INTmaxSpellLevel,
+        INTspellPerLevel,
+        scribeSuccessRate,
+        INTlore,
+
+        extraSpellSlotlv1,
+        extraSpellSlotlv2,
+        extraSpellSlotlv3,
+        extraSpellSlotlv4,
+        WISlore,
+
+        reaction,
+        buyDiscount,
+      },
+    });
+
+    return { success: true, character };
   }
 }

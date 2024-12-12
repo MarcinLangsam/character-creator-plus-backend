@@ -73,6 +73,7 @@ model Charisma {
 // Tabela dla postaci (ogólne dane)
 model Character {
   id                Int      @id @default(autoincrement())
+  name              String?
   gender            String?
   portrait          String?
   race              String?
@@ -100,7 +101,7 @@ model Character {
   Znajdywanie_PulapekBonus   Int?
   Ciche_PoruszanieBonus    Int?
   Krycie_W_CieniuBonus   Int?
-  Rozstawianie_Pulapek    Int?
+  Rozstawianie_PulapekBonus    Int?
   HPdice            Int?
   HP                Int?
   HPperLvBonus      Int?
@@ -126,26 +127,26 @@ model WeaponProficiencys {
   MieczeDlugie               Int
   MieczeKrotkie              Int
   Topory                     Int
-  MieczeDworeczne            Int
-  Katana                     Int
-  Scimtar                    Int
+  MieczeObureczne            Int
+  Katany                     Int
+  SejmitarWakizashiNinjaTo   Int
   Sztylety                   Int
-  MlotyWojenne               Int
+  MlotyBojowe                Int
   Maczugi                    Int
   Wlocznie                   Int
   Halabarda                  Int
-  Korbacze                   Int
+  CepyBojoweMorgernszterny   Int
   Wiekiery                   Int
-  KijeBojowe                 Int
+  Kije                       Int
   Kusze                      Int
   DlugieLuki                 Int
   KrotkieLuki                Int
   Strzalki                   Int
   Proce                      Int
-  StylBroniDworecznych       Int
-  StylMieczaITarczy          Int
-  StylMieczaJednorecznego    Int
-  StylDwochBroni             Int
+  StylWalkiBroniaDwureczna   Int
+  StylWalkiMieczemITarcza    Int
+  StylWalkiJednaBronia       Int
+  StylWalkiDwiemaBronmi      Int
 
   Character Character[]
 }
@@ -153,40 +154,22 @@ model WeaponProficiencys {
 // Tabela dla umiejętności złodziejskich
 model ThievingAbilities {
   id                        Int     @id @default(autoincrement())
-  Otwieranie_Zamkow          Int
+  Otwieranie_Zamkow         Int
   Kradziez_Kieszonkowa      Int
-  Ciche_Poruszanie           Int
-  Krycie_W_Cieniu            Int
+  Ciche_Poruszanie          Int
+  Krycie_W_Cieniu           Int
   Znajdywanie_Pulapek       Int
-  Wykrywanie_Iluzji          Int
+  Wykrywanie_Iluzji         Int
   Rozstawianie_Pulapek      Int
 
   Character Character[]
 }
-
-// model Gender {
-//   id          Int       @id @default(autoincrement())
-//   gender      String
-//   number      Int
-// }
 
 model Alignment {
   id             Int       @id @default(autoincrement())
   alignment      String
   number         String
 }
-
-// model Race {
-//   id          Int       @id @default(autoincrement())
-//   race        String
-//   number      Int
-// }
-
-// model Class {
-//   id          Int       @id @default(autoincrement())
-//   class        String
-//   number      Int
-// }
 
 model ProficiencysToSubclass {
   id                          Int       @id @default(autoincrement())
