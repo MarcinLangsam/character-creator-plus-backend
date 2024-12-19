@@ -213,3 +213,13 @@ model ThievingAbilitiesToSubclass {
   Rozstawianie_Pulapek      Int
   skillPointsThief          Int
 }
+
+model MalePortraits {
+  id              Int     @id @default(autoincrement())
+  fileName        String
+}
+
+model FemalePortraits {
+  id              Int     @id @default(autoincrement())
+  fileName        String
+}

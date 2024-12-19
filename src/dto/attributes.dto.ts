@@ -102,3 +102,7 @@ export interface ThievingAbilitiesToSubclass {
   Rozstawianie_Pulapek: number;
   skillPointsThief: number;
 }
+
+export interface PortraitsRespone {
+  fileName: string;
+}

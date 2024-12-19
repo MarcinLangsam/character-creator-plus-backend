@@ -3,7 +3,7 @@ import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
 import { PrismaService } from './prisma.service';
-import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass } from './dto/attributes.dto';
+import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone } from './dto/attributes.dto';
 import { join } from 'path';
 import { createReadStream, existsSync } from 'fs';
 
@@ -67,20 +67,16 @@ export class AppController {
     return ThievingAbilitiesToSubclass
   }
 
-  @Get('test') // Endpoint na sztywno
-  async getTestFile(@Res() res: Response) {
-    // Ścieżka do pliku na sztywno
-    const filePath = join(__dirname, '..', '..', 'uploads', 'wojownik', 'test.txt');
+  @Get('/portraitsNamesMale')
+  async getPortraitsNamesMale(): Promise<PortraitsRespone[]> {
+    const PortraitsNamesMale = await this.prisma.malePortraits.findMany()
+    return PortraitsNamesMale;
+  }
 
-    // Sprawdź, czy plik istnieje
-    if (!existsSync(filePath)) {
-      throw new NotFoundException('File not found');
-    }
-
-    // Otwórz strumień pliku i zwróć go w odpowiedzi
-    const fileStream = createReadStream(filePath);
-    res.setHeader('Content-Disposition', `attachment; filename=test.txt`);
-    return fileStream.pipe(res);
+  @Get('/portraitsNamesFemale')
+  async getPortraitsNamesFemale(): Promise<PortraitsRespone[]> {
+    const PortraitsNamesFemale = await this.prisma.femalePortraits.findMany()
+    return PortraitsNamesFemale
   }
 
   @Get("/:className/:subclassName")
@@ -105,6 +101,22 @@ export class AppController {
     @Param('className') className: string,
   ): StreamableFile {
     const file = createReadStream(join(process.cwd(), 'upload', className));
+    return new StreamableFile(file);
+  }
+
+  @Get("/MalePortraits/:portraitName")
+  getMalePortrait(
+    @Param('portraitName') portraitName: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', 'MalePortraits', portraitName));
+    return new StreamableFile(file);
+  }
+
+  @Get("/FemalePortraits/:portraitName")
+  getFemalePortrait(
+    @Param('portraitName') portraitName: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', 'FemalePortraits', portraitName));
     return new StreamableFile(file);
   }
 

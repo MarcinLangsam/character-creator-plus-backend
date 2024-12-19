@@ -374,6 +374,118 @@ async function insertThievingAbilitiesToSubclassData() {
   }
 }
 
+async function insertMalePortraitsData() {
+  const malePortraitsData = [
+      {name: "AJANTISM.png"},
+      {name: "ASAADM.png"},
+      {name: "BDORCM1M.png"},
+      {name: "BDSHAM1M.png"},
+      {name: "BDTMAM.png"},
+      {name: "BDTMCM.png"},
+      {name: "BDTMDM.png"},
+      {name: "BDTMGM.png"},
+      {name: "BDTMHM.png"},
+      {name: "BDTMIM.png"},
+      {name: "BDTMKM.png"},
+      {name: "CORANM.png"},
+      {name: "DORNLM.png"},
+      {name: "EDWINM.png"},
+      {name: "ELDOTHM.png"},
+      {name: "GARRICKM.png"},
+      {name: "GENDWRFM.png"},
+      {name: "GENMELFM.png"},
+      {name: "GENMHLFM.png"},
+      {name: "HELMM.png"},
+      {name: "HVLNM.png"},
+      {name: "KAGAINM.png"},
+      {name: "KHALIDM.png"},
+      {name: "KIVANM.png"},
+      {name: "MAN1M.png"},
+      {name: "MAN2M.png"},
+      {name: "MANLEY3M.png"},
+      {name: "MANLEY7M.png"},
+      {name: "MANLEY8M.png"},
+      {name: "MANLEY9M.png"},
+      {name: "MINSCM.png"},
+      {name: "MONTARM.png"},
+      {name: "NANOMENM.png"},
+      {name: "NCERNDM.png"},
+      {name: "NEDWINM.png"},
+      {name: "NHAERM.png"},
+      {name: "NHORCM.png"},
+      {name: "NJANM.png"},
+      {name: "NKELDORM.png"},
+      {name: "NKORGANM.png"},
+      {name: "NMINSCM.png"},
+      {name: "NVALYGAM.png"},
+      {name: "NYOSHIMM.png"},
+      {name: "QUAYLEM.png"},
+      {name: "TIAXM.png"},
+      {name: "XANM.png"},
+      {name: "XZARM.png"},
+      {name: "YANNER4M.png"},
+      {name: "YANNER5M.png"},
+      {name: "YANNER6M.png"},
+      {name: "YESLICKM.png"},
+    ];
+
+  for (const data of malePortraitsData) {
+    await prisma.malePortraits.create({
+      data: {
+        fileName: data.name,
+      }
+    });
+  }
+}
+
+async function insertFemalePortraitsData() {
+  const femalePortraitsData = [
+      {name: "ALORAM.png"},
+      {name: "BDORCF1M.png"},
+      {name: "BDSHAF1M.png"},
+      {name: "BDTMBM.png"},
+      {name: "BDTMEM.png"},
+      {name: "BDTMFM.png"},
+      {name: "BDTMJM.png"},
+      {name: "BRANWEM.png"},
+      {name: "DYNAHEIM.png"},
+      {name: "FALDORNM.png"},
+      {name: "IMOENM.png"},
+      {name: "JAHEIRAM.png"},
+      {name: "MANLEY1M.png"},
+      {name: "MANLEY2M.png"},
+      {name: "MANLEY4M.png"},
+      {name: "MANLEY5M.png"},
+      {name: "MANLEYXM.png"},
+      {name: "NAERIEM.png"},
+      {name: "NEERAM.png"},
+      {name: "NIMOENM.png"},
+      {name: "NJAHEIRM.png"},
+      {name: "NMAZZYM.png"},
+      {name: "NNALIAM.png"},
+      {name: "NVICONM.png"},
+      {name: "OHHEXM.png"},
+      {name: "SAFANAM.png"},
+      {name: "SHARTELM.png"},
+      {name: "SKANM.png"},
+      {name: "SKIEM.png"},
+      {name: "VICONIAM.png"},
+      {name: "WOMAN1M.png"},
+      {name: "WOMAN2M.png"},
+      {name: "YANNER1M.png"},
+      {name: "YANNER2M.png"},
+      {name: "YANNER3M.png"},
+    ];
+
+  for (const data of femalePortraitsData) {
+    await prisma.femalePortraits.create({
+      data: {
+        fileName: data.name,
+      }
+    });
+  }
+}
+
 async function fillDataBase() {
   await insertStrengthData();
   await insertAgilityData();
@@ -384,6 +496,8 @@ async function fillDataBase() {
   await insertAlignmentData();
   await insertProficiencysToSubclassData();
   await insertThievingAbilitiesToSubclassData();
+  await insertMalePortraitsData();
+  await insertFemalePortraitsData();
 }
 
 
