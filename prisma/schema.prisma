@@ -223,3 +223,14 @@ model FemalePortraits {
   id              Int     @id @default(autoincrement())
   fileName        String
 }
+
+
+model WizardSpells {
+  id              Int     @id @default(autoincrement())
+  name            String
+  school          String
+  level           Int
+  descriptionFile String
+  iconFile        String
+  hexData         String
+}

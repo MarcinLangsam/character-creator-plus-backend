@@ -486,6 +486,123 @@ async function insertFemalePortraitsData() {
   }
 }
 
+async function insertWizardSpellData() {
+  const wizardSpellData = [
+    //level 1 spells
+    {name: "Identyfikacja", school: "Poznanie", level: 1, descriptionFile: "Identyfikacja.txt", iconFile: "SPWI110.png", hexData: "SPWI110"},
+    {name: "Infrawizja", school: "Poznanie", level: 1, descriptionFile: "Infrawizja.txt", iconFile: "SPWI111.png", hexData: "SPWI111"},
+    {name: "Magiczny Pocisk", school: "Wywoływanie", level: 1, descriptionFile: "Magiczny Pocisk.txt", iconFile: "SPWI112.png", hexData: "SPWI112"},
+    {name: "Migoczące Barwy", school: "Przemiany", level: 1, descriptionFile: "Migoczące Barwy.txt", iconFile: "SPWI105.png", hexData: "SPWI105"},
+    {name: "Ochrona Przed Petryfikacją", school: "Odrzucanie", level: 1, descriptionFile: "Ochrona Przed Petryfikacją.txt", iconFile: "SPWI108.png", hexData: "SPWI108"},
+    {name: "Ochrona Przed Złem", school: "Odrzucanie", level: 1, descriptionFile: "Ochrona Przed Złem.txt", iconFile: "SPWI113.png", hexData: "SPWI113"},
+    {name: "Ociemniałość", school: "Iluzje/Urojenia", level: 1, descriptionFile: "Ociemniałość.txt", iconFile: "SPWI106.png", hexData: "SPWI106"},
+    {name: "Odbity Obraz", school: "Iluzje/Urojenia", level: 1, descriptionFile: "Odbity Obraz.txt", iconFile: "SPWI120.png", hexData: "SPWI120"},
+    {name: "Pomniejsze drążnie Larlocha", school: "Nekromancja", level: 1, descriptionFile: "Pomniejsze drążnie Larlocha.txt", iconFile: "SPWI119.png", hexData: "SPWI119"},
+    {name: "Porażający uścisk", school: "Przemiany", level: 1, descriptionFile: "Porażający uścisk.txt", iconFile: "SPWI115.png", hexData: "SPWI115"},
+    {name: "Przerażenie", school: "Iluzje/Urojenia", level: 1, descriptionFile: "Przerażenie.txt", iconFile: "SPWI125.png", hexData: "SPWI125"},
+    {name: "Przyjaciele", school: "Zaczarowania/Zauroczenia", level: 1, descriptionFile: "Przyjaciele.txt", iconFile: "SPWI107.png", hexData: "SPWI107"},
+    {name: "Przywołanie Chowańca", school: "Sprowadzanie/Przywoływanie", level: 1, descriptionFile: "Przywołanie Chowańca.txt", iconFile: "SPWI123.png", hexData: "SPWI123"},
+    {name: "Płonące Dłonie", school: "Przemiany", level: 1, descriptionFile: "Płonące Dłonie.txt", iconFile: "SPWI103.png", hexData: "SPWI103"},
+    {name: "Tarcza", school: "Wywoływanie", level: 1, descriptionFile: "Tarcza.txt", iconFile: "SPWI114.png", hexData: "SPWI114"},
+    {name: "Uśpeine", school: "Zaczarowania/Zauroczenia", level: 1, descriptionFile: "Uśpeine.txt", iconFile: "SPWI116.png", hexData: "SPWI116"},
+    {name: "Zauroczenie Osoby", school: "Zaczarowania/Zauroczenia", level: 1, descriptionFile: "Zauroczenie Osoby.txt", iconFile: "SPWI104.png", hexData: "SPWI104"},
+    {name: "Zbroja", school: "Sprowadzanie", level: 1, descriptionFile: "Zbroja.txt", iconFile: "SPWI102.png", hexData: "SPWI102"},
+    {name: "Zmiennobarwna Kula", school: "Wywoływanie", level: 1, descriptionFile: "Zmiennobarwna kula.txt", iconFile: "SPWI118.png", hexData: "SPWI118"},
+    {name: "Zamrażający Dotyk", school: "Nekromancja", level: 1, descriptionFile: "Zamrażający Dotyk.txt", iconFile: "SPWI117.png", hexData: "SPWI117"},
+    {name: "Śliskość", school: "Sprowadzanie/Przywoływanie", level: 1, descriptionFile: "Śliskość.txt", iconFile: "SPWI101.png", hexData: "SPWI101"},
+    //level 2 spells
+    {name: "Błyszczący Pył", school: "Sprowadzanie/Przywoływanie", level: 2, descriptionFile: "Błyszczący Pył.txt", iconFile: "SPWI224.png", hexData: "SPWI224"},
+    {name: "Dotyk Ghula", school: "Nekroancja", level: 2, descriptionFile: "Dotyk Ghula.txt", iconFile: "SPWI218.png", hexData: "SPWI218"},
+    {name: "Groza", school: "Nekroancja", level: 2, descriptionFile: "Groza.txt", iconFile: "SPWI205.png", hexData: "SPWI205"},
+    {name: "Głuchota", school: "Iluzje/Urojenia", level: 2, descriptionFile: "Głuchota.txt", iconFile: "SPWI223.png", hexData: "SPWI223"},
+    {name: "Kwasowa Strzała Melfa", school: "Sprowadzanie/Przywoływanie", level: 2, descriptionFile: "Kwasowa Strzała Melfa.txt", iconFile: "SPWI211.png", hexData: "SPWI211"},
+    {name: "Lustrzane Odbicie", school: "Iluzje/Urojenia", level: 2, descriptionFile: "Lustrzane Odbicie.txt", iconFile: "SPWI212.png", hexData: "SPWI212"},
+    {name: "Niewidzialność", school: "Iluzje/Urojenia", level: 2, descriptionFile: "Niewidzialność.txt", iconFile: "SPWI206.png", hexData: "SPWI206"},
+    {name: "Odporność na Strach", school: "Odrzucanie", level: 2, descriptionFile: "Odporność na Strach.txt", iconFile: "SPWI210.png", hexData: "SPWI210"},
+    {name: "Otwarcie", school: "Przemiany", level: 2, descriptionFile: "Otwarcie.txt", iconFile: "SPWI207.png", hexData: "SPWI207"},
+    {name: "Pajęczyna", school: "Wywoływanie", level: 2, descriptionFile: "Pajęczyna.txt", iconFile: "SPWI215.png", hexData: "SPWI215"},
+    {name: "Poznanie Charakteru", school: "Poznanie", level: 2, descriptionFile: "Poznanie Charakteru.txt", iconFile: "SPWI208.png", hexData: "SPWI208"},
+    {name: "Promień Osłabienia", school: "Zaczarowania/Zauroczenia", level: 2, descriptionFile: "Promień Osłabienia.txt", iconFile: "SPWI221.png", hexData: "221"},
+    {name: "Płomienie Agannazara", school: "Wywoływanie", level: 2, descriptionFile: "Płomienie Agannazara.txt", iconFile: "SPWI217.png", hexData: "SPWI217"},
+    {name: "Rozmycie", school: "Iluzje/Urojenia", level: 2, descriptionFile: "Rozmycie.txt", iconFile: "SPWI201.png", hexData: "SPWI201"},
+    {name: "Szczęście", school: "Zaczarowania/Zauroczenia", level: 2, descriptionFile: "Szczęscie.txt", iconFile: "SPWI209.png", hexData: "SPWI209"},
+    {name: "Słowo Mocy: Uśpienie", school: "Sprowadzanie/Przywoływanie", level: 2, descriptionFile: "Słowo Mocy: Uśpienie.txt", iconFile: "SPWI220.png", hexData: "SPWI220"},
+    {name: "Ugłosowienie", school: "Przemiany", level: 2, descriptionFile: "Ugłosowienie.txt", iconFile: "SPWI219.png", hexData: "SPWI219"},
+    {name: "Wykrycie Niewidzialnego", school: "Poznanie", level: 2, descriptionFile: "Wykrycie Niewidzialnego.txt", iconFile: "SPWI203.png", hexData: "SPWI203"},
+    {name: "Wykrycie Zła", school: "Poznanie", level: 2, descriptionFile: "Wykrycie Zła.txt", iconFile: "SPWI202.png", hexData: "SPWI202"},
+    {name: "Wzmocnienie Siły", school: "Przemiany", level: 2, descriptionFile: "Wzmocnienie Siły.txt", iconFile: "SPWI214.png", hexData: "SPWI214"},
+    {name: "Śmierdząca Chmura", school: "Wywoływanie", level: 2, descriptionFile: "Śmierdząca Chmura.txt", iconFile: "SPWI213.png", hexData: "SPWI213"},
+    //level 3 spells
+    {name: "Błyskawica", school: "Wywoływanie", level: 3, descriptionFile: "Błyskawica.txt", iconFile: "SPWI308.png", hexData: "SPWI308"},
+    {name: "Duchowy Pancerz", school: "Sprowadzanie/Przywoływanie", level: 3, descriptionFile: "Duchowy Pancerz.txt", iconFile: "SPWI317.png", hexData: "SPWI317"},
+    {name: "Eksplodująca Czaszka", school: "Nekromancja", level: 3, descriptionFile: "Eksplodująca Czaszka.txt", iconFile: "SPWI313.png", hexData: "SPWI313"},
+    {name: "Jasnowidzenie", school: "Poznanie", level: 3, descriptionFile: "Jasnowidzenie.txt", iconFile: "SPWI301.png", hexData: "SPWI301"},
+    {name: "Miniaturowe Meteory Melfa", school: "Wywoływanie", level: 3, descriptionFile: "Miniaturowe Meteory Melfa.txt", iconFile: "SPWI325.png", hexData: "SPWI325"},
+    {name: "Mniejsze Odchylenie Czaru", school: "Odrzucanie", level: 3, descriptionFile: "Mniejsze Odchylenie Czaru.txt", iconFile: "SPWI318.png", hexData: "SPWI318"},
+    {name: "Niewidzialność, promień 3 metry", school: "Iluzje/Urojenia", level: 3, descriptionFile: "Niewidzialność, promień 3 metry.txt", iconFile: "SPWI307.png", hexData: "SPWI307"},
+    {name: "Niewykrywalność", school: "Odrzucanie", level: 3, descriptionFile: "Niewykrywalność.txt", iconFile: "SPWI310.png", hexData: "SPWI310"},
+    {name: "Ochrona Przed Ogniem", school: "Odrzucanie", level: 3, descriptionFile: "Ochrona Przed Ogniem.txt", iconFile: "SPWI319.png", hexData: "SPWI319"},
+    {name: "Ochrona Przed Zimnem", school: "Odrzucanie", level: 3, descriptionFile: "Ochrona Przed Zimnem.txt", iconFile: "SPWI320.png", hexData: "SPWI320"},
+    {name: "Ochrona Przed Zwykłymi Pociskami", school: "Odrzucanie", level: 3, descriptionFile: "Ochrona Przed Zwykłymi Pociskami.txt", iconFile: "SPWI311.png", hexData: "SPWI311"},
+    {name: "Ognista Kula", school: "Wywoływanie", level: 3, descriptionFile: "Ognista Kula.txt", iconFile: "SPWI304.png", hexData: "SPWI304"},
+    {name: "Ognista Strzała", school: "Sprowadzanie/Przywoływanie", level: 3, descriptionFile: "Ognista Strzała.txt", iconFile: "SPWI303.png", hexData: "SPWI303"},
+    {name: "Okropne Zauroczenie", school: "Zaczarowania/Zauroczenia", level: 3, descriptionFile: "Okropne Zauroczenie.txt", iconFile: "SPWI316.png", hexData: "SPWI316"},
+    {name: "Przyspieszenie Ruchów", school: "Przemiany", level: 3, descriptionFile: "Przyspieszenie Ruchów.txt", iconFile: "SPWI305.png", hexData: "SPWI305"},
+    {name: "Przywołanie Potwora I", school: "Sprowadzanie/Przywoływanie", level: 3, descriptionFile: "Przywołanie Potwora I.txt", iconFile: "SPWI309.png", hexData: "SPWI309"},
+    {name: "Półmaterialność", school: "Przemiany, Iluzje", level: 3, descriptionFile: "Półmaterialność.txt", iconFile: "SPWI315.png", hexData: "SPWI315"},
+    {name: "Rozproszenie Magii", school: "Odrzucanie", level: 3, descriptionFile: "Rozproszenie Magii.txt", iconFile: "SPWI326.png", hexData: "SPWI326"},
+    {name: "Spowolnienie", school: "Przemiany", level: 3, descriptionFile: "Spowolnienie.txt", iconFile: "SPWI312.png", hexData: "SPWI312"},
+    {name: "Unieruchomienie nieumarłego", school: "Nekromancja", level: 3, descriptionFile: "Unieruchomienie nieumarłego.txt", iconFile: "SPWI324.png", hexData: "SPWI324"},
+    {name: "Unieruchomienie osoby", school: "Zaczarowania/Zauroczenia", level: 3, descriptionFile: "Unieruchomienie osoby.txt", iconFile: "SPWI306.png", hexData: "SPWI306"},
+    {name: "Usunięcie Magii", school: "Odrzucanie", level: 3, descriptionFile: "Usunięcie Magii.txt", iconFile: "SPWI302.png", hexData: "SPWI302"},
+    {name: "Wampiryczne dotknięcie", school: "Nekromancja", level: 3, descriptionFile: "Wampiryczne dotknięcie.txt", iconFile: "SPWI314.png", hexData: "SPWI314"},
+    {name: "Wykrycie Ilizji", school: "Poznanie", level: 3, descriptionFile: "Wykrycie Ilizji.txt", iconFile: "SPWI322.png", hexData: "SPWI322"},
+    {name: "Zbicie Czaru", school: "Odrzucanie", level: 3, descriptionFile: "Zbicie Czaru.txt", iconFile: "SPWI321.png", hexData: "SPWI321"},
+    //level 4 spells
+    {name: "Czarodziejskie Oko", school: "Poznanie, Przemiany", level: 4, descriptionFile: "Czarodziejskie Oko.txt", iconFile: "SPWI425.png", hexData: "SPWI425"},
+    {name: "Dalekowzroczność", school: "Poznanie", level: 4, descriptionFile: "Dalekowzroczność.txt", iconFile: "SPWI424.png", hexData: "SPWI424"},
+    {name: "Emocje: Beznadziejność", school: "Zaczarowania/Zauroczenia", level: 4, descriptionFile: "Emocje: Beznadziejność.txt", iconFile: "SPWI411.png", hexData: "SPWI411"},
+    {name: "Kamienna Skóra", school: "Przemiany", level: 4, descriptionFile: "Kamienna Skóra.txt", iconFile: "SPWI408.png", hexData: "SPWI408"},
+    {name: "Klosz Niewrażliwosci Mniejszej", school: "Odrzucanie", level: 4, descriptionFile: "Klosz Niewrażliwosci Mniejszej.txt", iconFile: "SPWI406.png", hexData: "SPWI406"},
+    {name: "Lodowa Nawałnica", school: "Wywoływanie", level: 4, descriptionFile: "Lodowa Nawałnica.txt", iconFile: "SPWI404.png", hexData: "SPWI404"},
+    {name: "Mniejszy sekwencer", school: "Inwokacje/Wywoływanie", level: 4, descriptionFile: "Mniejszy sekwencer.txt", iconFile: "SPWI420.png", hexData: "SPWI420"},
+    {name: "Nienaruszalna Sfera Otiluka", school: "Przemiany", level: 4, descriptionFile: "Nienaruszalna Sfera Otiluka.txt", iconFile: "SPWI413.png", hexData: "SPWI413"},
+    {name: "Ognista Taracza (błękitna)", school: "Wywoływanie", level: 4, descriptionFile: "Ognista Taracza (błękitna).txt", iconFile: "SPWI403.png", hexData: "SPWI403"},
+    {name: "Ognista Taracza (czerwona)", school: "Wywoływanie", level: 4, descriptionFile: "Ognista Taracza (czerwona).txt", iconFile: "SPWI418.png", hexData: "SPWI418"},
+    {name: "Pajęczy Pomiot", school: "Sprowadzanie/Przywoływanie", level: 4, descriptionFile: "Pajęczy Pomiot.txt", iconFile: "SPWI423.png", hexData: "SPWI423"},
+    {name: "Pancerz Eteralny", school: "Nekromancja", level: 4, descriptionFile: "Pancerz Eteralny.txt", iconFile: "SPWI414.png", hexData: "SPWI414"},
+    {name: "Pole Teleportacyjne", school: "Przemiany", level: 4, descriptionFile: "Pole Teleportacyjne.txt", iconFile: "SPWI421.png", hexData: "SPWI421"},
+    {name: "Polimorfowanie Innego", school: "Przemiany", level: 4, descriptionFile: "Polimorfowanie Innego.txt", iconFile: "SPWI415.png", hexData: "SPWI415"},
+    {name: "Polimorfowanie Siebie", school: "Przemiany", level: 4, descriptionFile: "Polimorfowanie Siebie.txt", iconFile: "SPWI416.png", hexData: "SPWI416"},
+    {name: "Przywołanie Potwora II", school: "Sprowadzanie/Przywoływanie", level: 4, descriptionFile: "Przywołanie Potwora II.txt", iconFile: "SPWI407.png", hexData: "SPWI407"},
+    {name: "Tajemne Słowo", school: "Odrzucanie", level: 4, descriptionFile: "Tajemne Słowo.txt", iconFile: "SPWI419.png", hexData: "SPWI419"},
+    {name: "Ulepszona Niewidzialność", school: "Iluzje/Urojenia", level: 4, descriptionFile: "Ulepszona Niewidzialność.txt", iconFile: "SPWI405.png", hexData: "SPWI405"},
+    {name: "Wielkie Osłabienie", school: "Zaczarowania/Zauroczenia", level: 4, descriptionFile: "Wielkie Osłabienie.txt", iconFile: "SPWI412.png", hexData: "412"},
+    {name: "Zaklęta Broń", school: "Zaczarowania/Zauroczenia", level: 4, descriptionFile: "Zaklęta Broń.txt", iconFile: "SPWI417.png", hexData: "SPWI417"},
+    {name: "Zamęt", school: "Zaczarowania/Zauroczenia", level: 4, descriptionFile: "Zamęt.txt", iconFile: "SPWI401.png", hexData: "SPWI401"},
+    {name: "Zaraza", school: "Nekromancja", level: 4, descriptionFile: "Zaraza.txt", iconFile: "SPWI409.png", hexData: "SPWI409"},
+    {name: "Zdjęcie Klątwy", school: "Odrzucanie", level: 4, descriptionFile: "Zdjęcie Klątwy.txt", iconFile: "SPWI410.png", hexData: "SPWI410"},
+    //Wild magic
+    {name: "Lekkomyślne zaklęcie Nahala", school: "Inwokacje/Wywoływaniem, Dzika", level: 1, descriptionFile: "Lekkomyślne zaklęcie Nahala.txt", iconFile: "SPWI124.png", hexData: "SPWI124"},
+    {name: "Tarcza Chaosu", school: "Odrzucanie, Dzika", level: 3, descriptionFile: "Tarcza Chaosu.txt", iconFile: "SPWI222.png", hexData: "SPWI222"},
+    
+
+  ]
+
+  for (const data of wizardSpellData) {
+    await prisma.wizardSpells.create({
+      data: {
+        name: data.name,
+        school: data.school,
+        level: data.level,
+        descriptionFile: data.descriptionFile,
+        iconFile: data.iconFile,
+        hexData: data.hexData
+      }
+    })
+  }
+}
+
 async function fillDataBase() {
   await insertStrengthData();
   await insertAgilityData();
@@ -498,6 +615,7 @@ async function fillDataBase() {
   await insertThievingAbilitiesToSubclassData();
   await insertMalePortraitsData();
   await insertFemalePortraitsData();
+  await insertWizardSpellData();
 }
 
 
@@ -509,7 +627,7 @@ async function bootstrap() {
 
   await app.listen(process.env.PORT ?? 3000);
 
-  //fillDataBase()
+  //fillDataBase() //use only at first lunch after migration
 
 }
 bootstrap();

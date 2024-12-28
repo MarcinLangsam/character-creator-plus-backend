@@ -106,3 +106,12 @@ export interface ThievingAbilitiesToSubclass {
 export interface PortraitsRespone {
   fileName: string;
 }
+
+export interface WizardSpellResponse {
+  name: string;
+  school: string;
+  level: number;
+  descriptionFile: string;
+  iconFile: string;
+  hexData: string;
+}
