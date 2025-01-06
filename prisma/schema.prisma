@@ -234,3 +234,13 @@ model WizardSpells {
   iconFile        String
   hexData         String
 }
+
+model ClericSpells {
+  id              Int     @id @default(autoincrement())
+  name            String
+  school          String
+  level           Int
+  descriptionFile String
+  iconFile        String
+  hexData         String
+}

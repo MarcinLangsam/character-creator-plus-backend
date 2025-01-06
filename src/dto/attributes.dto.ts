@@ -115,3 +115,12 @@ export interface WizardSpellResponse {
   iconFile: string;
   hexData: string;
 }
+
+export interface ClericSpellResponse {
+  name: string;
+  school: string;
+  level: number;
+  descriptionFile: string;
+  iconFile: string;
+  hexData: string;
+}

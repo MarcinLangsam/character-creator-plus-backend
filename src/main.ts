@@ -282,7 +282,14 @@ async function insertProficiencysToSubclassData() {
     { subclass: "Zmiennokształtny",        SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Włócznie: 1, Maczugi: 1, Strzałki: 1, Kije: 1, Proce: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 2 },
     { subclass: "Mściciel",                SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Włócznie: 1, Maczugi: 1, Strzałki: 1, Kije: 1, Proce: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 2 },
     { subclass: "Mag",                     Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
-    { subclass: "Mag_Specjalista",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Mistrz_Odrzucania",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Mistrz_Przywołań",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Mistrz_Pozanania",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Mistrz_Zauroczeń",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Ilizjonista",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Mistrz_Inwokacji",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Nekromanta",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
+    { subclass: "Mistrz_Przemian",         Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
     { subclass: "Dziki_Mag",               Sztylety: 1, Kije: 1, Proce: 1, Strzałki: 1, MieczePółtoraręczne: -1, MieczeDługie: -1, MieczeKrótkie: -1, Topory: -1, MieczeOburęczne: -1, Katany: -1, SejmitarWakizashiNinjaTo: -1, MłotyBojowe: -1, Maczugi: -1, Włócznie: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, Kusze: -1, DługieŁuki: -1, KrótkieŁuki: -1, StylWalkiBroniąDwuręczną: -1, StylWalkiMieczemITarczą: -1, StylWalkiJednąBronią: -1, StylWalkiDwiemaBrońmi: -1, skillPoints: 1 },
     { subclass: "Złodziej",                MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Maczugi: 1, Włócznie: -1, Kije: 1, Kusze: 1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeOburęczne: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, DługieŁuki: -1,  skillPoints: 2 },
     { subclass: "Zabójca",                 MieczeDługie: 1, MieczeKrótkie: 1, Topory: -1, Katany: 1, SejmitarWakizashiNinjaTo: 1, Sztylety: 1, Maczugi: 1, Włócznie: -1, Kije: 1, Kusze: 1, KrótkieŁuki: 1, Strzałki: 1, Proce: 1, StylWalkiBroniąDwuręczną: 1, StylWalkiMieczemITarczą: 1, StylWalkiJednąBronią: 1, StylWalkiDwiemaBrońmi: 1, MieczePółtoraręczne: -1, MieczeOburęczne: -1, MłotyBojowe: -1, Halabarda: -1, CepyBojoweMorgernszterny: -1, Wiekiery: -1, DługieŁuki: -1,  skillPoints: 2 },
@@ -419,6 +426,7 @@ async function insertMalePortraitsData() {
       {name: "NMINSCM.png"},
       {name: "NVALYGAM.png"},
       {name: "NYOSHIMM.png"},
+      {name: "RASAADM.png"},
       {name: "QUAYLEM.png"},
       {name: "TIAXM.png"},
       {name: "XANM.png"},
@@ -603,6 +611,96 @@ async function insertWizardSpellData() {
   }
 }
 
+
+async function insertClericSpellData() {
+  const clericSpellData = [
+    //level 1 spells
+    {name: "Błogosławieństwo", school: "Sprowadzanie/Przywoływanie", level: 1, descriptionFile: "Błogosławieństwo.txt", iconFile: "SPPR101.png", hexData: "SPPR101"},
+    {name: "Leczenie Lekkich Ran", school: "Nekroancja", level: 1, descriptionFile: "Leczenie Lekkich Ran.txt", iconFile: "SPPR103.png", hexData: "SPPR103"},
+    {name: "Magiczny Kamień", school: "Zaczarowania", level: 1, descriptionFile: "Magiczny Kamień.txt", iconFile: "SPPR106.png", hexData: "SPPR106"},
+    {name: "Metamorfoza Laski W Broń", school: "Przemiany", level: 1, descriptionFile: "Metamorfoza Laski W Broń.txt", iconFile: "SPPR110.png", hexData: "SPPR110"},
+    {name: "Ochrona Przed Złem", school: "Odrzucanie", level: 1, descriptionFile: "Ochrona Przed Złem.txt", iconFile: "SPPR107.png", hexData: "SPPR107"},
+    {name: "Przełamanie Strachu", school: "Odrzucanie", level: 1, descriptionFile: "Przełamanie Strachu.txt", iconFile: "SPPR108.png", hexData: "SPPR108"},
+    {name: "Rozkaz", school: "Zaczarowania/Zauroczenia", level: 1, descriptionFile: "Rozkaz.txt", iconFile: "SPPR102.png", hexData: "SPPR102"},
+    {name: "Sanktuarium", school: "Odrzucanie", level: 1, descriptionFile: "Sanktuarium.txt", iconFile: "SPPR109.png", hexData: "SPPR109"},
+    {name: "Wykrycie Zła", school: "Poznanie", level: 1, descriptionFile: "Wykrycie Zła.txt", iconFile: "SPPR104.png", hexData: "SPPR104"},
+    {name: "Zagłada", school: "Przemiany", level: 1, descriptionFile: "Zagłada.txt", iconFile: "SPPR113.png", hexData: "SPPR113"},
+    {name: "Zabroja Wiary", school: "Odrzucanie", level: 1, descriptionFile: "Zabroja Wiary.txt", iconFile: "SPPR111.png", hexData: "SPPR111"},
+    //level 2 spells
+    {name: "Cisza, promień 5 metrów", school: "Przemiany", level: 2, descriptionFile: "Cisza, promień 5 metrów.txt", iconFile: "SPPR211.png", hexData: "SPPR211"},
+    {name: "Korowa Skóra", school: "Przemiany", level: 2, descriptionFile: "Korowa Skóra.txt", iconFile: "SPPR202.png", hexData: "SPPR202"},
+    {name: "Młot Duchowy", school: "Inwokacje", level: 2, descriptionFile: "Młot Duchowy.txt", iconFile: "SPPR213.png", hexData: "SPPR213"},
+    {name: "Odorność na Ogień/Zimno", school: "Przemiany", level: 2, descriptionFile: "Odorność na Ogień/Zimno.txt", iconFile: "SPPR210.png", hexData: "SPPR210"},
+    {name: "Pomoc", school: "Nekromancja, Sprowadzanie", level: 2, descriptionFile: "Pomoc.txt", iconFile: "SPPR201.png", hexData: "SPPR201"},
+    {name: "Poznanie Charakteru", school: "Poznanie", level: 2, descriptionFile: "Poznanie Charakteru.txt", iconFile: "SPPR209.png", hexData: "SPPR209"},
+    {name: "Przywołanie Boskiej Mocy", school: "Inwokacje", level: 2, descriptionFile: "Przywołanie Boskiej Mocy.txt", iconFile: "SPPR214.png", hexData: "SPPR214"},
+    {name: "Psalm", school: "Sprowadzanie/Przywoływanie", level: 2, descriptionFile: "Psalm.txt", iconFile: "SPPR203.png", hexData: "SPPR203"},
+    {name: "Płomienne ostrze", school: "Wywoływanie", level: 2, descriptionFile: "Płomienne ostrze.txt", iconFile: "SPPR206.png", hexData: "SPPR206"},
+    {name: "Spowlonienie Trucizny", school: "Nekromancja", level: 2, descriptionFile: "Spowlonienie Trucizny.txt", iconFile: "SPPR212.png", hexData: "SPPR212"},
+    {name: "Unieruchomienie Osoby", school: "Zaczarowania/Zauroczenia", level: 2, descriptionFile: "Unieruchomienie Osoby.txt", iconFile: "SPPR208.png", hexData: "SPPR208"},
+    {name: "Znajdowanie Pułapek", school: "Poznanie", level: 2, descriptionFile: "Znajdowanie Pułapek.txt", iconFile: "SPPR205.png", hexData: "SPPR205"},
+    //level 3 spells
+    {name: "Animacja Martwego", school: "Nekromancja", level: 3, descriptionFile: "Animacja Martwego.txt", iconFile: "SPPR301.png", hexData: "SPPR301"},
+    {name: "Bezmyślność", school: "Zaczarowania/Zauroczenia", level: 3, descriptionFile: "Bezmyślność.txt", iconFile: "SPPR311.png", hexData: "SPPR311"},
+    {name: "Glif Strażnicy", school: "Odrzucanie, Wywoływanie", level: 3, descriptionFile: "Glif Strażnicy.txt", iconFile: "SPPR204.png", hexData: "SPPR204"},
+    {name: "Leczenie Chorób", school: "Odrzucanie", level: 3, descriptionFile: "Leczenie Chorób.txt", iconFile: "SPPR317.png", hexData: "SPPR317"},
+    {name: "Leczenie Średnich Ran", school: "Nekromancja", level: 3, descriptionFile: "Leczenie Średnich Ran.txt", iconFile: "SPPR315.png", hexData: "SPPR315"},
+    {name: "Ochrona Przed Ogniem", school: "Odrzucanie", level: 3, descriptionFile: "Ochrona Przed Ogniem.txt", iconFile: "SPPR306.png", hexData: "SPPR306"},
+    {name: "Pozbawienie Magi", school: "Zaczarowania/Zauroczenia", level: 3, descriptionFile: "Pozbawienie Magi.txt", iconFile: "SPPR310.png", hexData: "SPPR310"},
+    {name: "Przeklęta Strefa", school: "Nekromancja", level: 3, descriptionFile: "Przeklęta Srefa.txt", iconFile: "SPPR314.png", hexData: "SPPR314"},
+    {name: "Rozproszenie Magii", school: "Przemiany", level: 3, descriptionFile: "Rozproszenie Magii.txt", iconFile: "SPPR303.png", hexData: "SPPR303"},
+    {name: "Siła Jedności", school: "Przemiany", level: 3, descriptionFile: "Siła Jedności.txt", iconFile: "SPPR313.png", hexData: "SPPR313"},
+    {name: "Strefa Czystergo Powietrza", school: "Odrzucanie", level: 3, descriptionFile: "Strefa Czystergo Powietrza.txt", iconFile: "SPPR318.png", hexData: "SPPR318"},
+    {name: "Ujawnienie Niewidzialnego", school: "Poznanie", level: 3, descriptionFile: "Ujawnienie Niewidzialnego.txt", iconFile: "SPPR309.png", hexData: "SPPR309"},
+    {name: "Zdjęcie Klątwy", school: "Odrzucanie", level: 3, descriptionFile: "Zdjęcie Klątwy.txt", iconFile: "SPPR307.png", hexData: "SPPR307"},
+    {name: "Zdjęcie Paraliżu", school: "Odrzucanie", level: 3, descriptionFile: "Zdjęcie Paraliżu.txt", iconFile: "SPPR308.png", hexData: "SPPR308"},
+    {name: "Święte Uderzenie", school: "Nekromancja", level: 3, descriptionFile: "Święte Uderzenie.txt", iconFile: "SPPR313.png", hexData: "SPPR313"},
+    //level 4 spells
+    {name: "Dalekowzroczność", school: "Poznanie", level: 4, descriptionFile: "Dalekowzroczność.txt", iconFile: "SPPR415.png", hexData: "SPPR415"},
+    {name: "Dominacja Umysłowa", school: "Zaczarowania/Zauroczenia", level: 4, descriptionFile: "Dominacja Umysłowa.txt", iconFile: "SPPR405.png", hexData: "SPPR405"},
+    {name: "Jedność Obronna", school: "Zaczarowania/Zauroczenia", level: 4, descriptionFile: "Jedność Obronna.txt", iconFile: "SPPR406.png", hexData: "SPPR406"},
+    {name: "Leczenie Poważnych Ran", school: "Nekromancja", level: 4, descriptionFile: "Leczenie Poważnych Ran.txt", iconFile: "SPPR401.png", hexData: "SPPR401"},
+    {name: "Neutralizacja Trucizny", school: "Nekromancja", level: 4, descriptionFile: "Neutralizacja Trucizny.txt", iconFile: "SPPR404.png", hexData: "SPPR404"},
+    {name: "Ochrona Przed Błyskawicami", school: "Odrzucanie", level: 4, descriptionFile: "Ochrona Przed Błyskawicami.txt", iconFile: "SPPR407.png", hexData: "SPPR407"},
+    {name: "Ochrona Przed Negatywną Energią", school: "Odrzucanie", level: 4, descriptionFile: "Ochrona Przed Negatywną Energią.txt", iconFile: "SPPR413.png", hexData: "SPPR413"},
+    {name: "Ochrona Przed Złem, promień 3 metry", school: "Odrzucanie", level: 4, descriptionFile: "Ochrona Przed Złem, promień 3 metry.txt", iconFile: "SPPR408.png", hexData: "SPPR408"},
+    {name: "Osłona Przed Śmiercią", school: "Nekromancja", level: 4, descriptionFile: "Osłona Przed Śmiercią.txt", iconFile: "SPPR409.png", hexData: "SPPR409"},
+    {name: "Pomniejsze Przywrócenie", school: "Nekromancja", level: 4, descriptionFile: "Pomniejsze Przywrócenie.txt", iconFile: "SPPR417.png", hexData: "SPPR417"},
+    {name: "Przywołanie Zwierząt I", school: "Sprowadzanie/Przywoływanie", level: 4, descriptionFile: "Przywołanie Zwierząt I.txt", iconFile: "SPPR402.png", hexData: "SPPR402"},
+    {name: "Płaszcz Strachu", school: "Sprowadzanie", level: 4, descriptionFile: "Płaszcz Strachu.txt", iconFile: "SPPR416.png", hexData: "SPPR416"},
+    {name: "Swoboda Działania", school: "Odrzucanie", level: 4, descriptionFile: "Swoboda Działania.txt", iconFile: "SPPR403.png", hexData: "SPPR403"},
+    {name: "Trucizna", school: "Nekromancja", level: 4, descriptionFile: "Trucizna.txt", iconFile: "SPPR411.png", hexData: "SPPR411"},
+    {name: "Zadawanie Poważnych Ran", school: "Nekromancja", level: 4, descriptionFile: "Zadawanie Poważnych Ran.txt", iconFile: "SPPR414.png", hexData: "SPPR414"},
+    {name: "Święta Moc", school: "Wywoływanie", level: 4, descriptionFile: "Święta Moc.txt", iconFile: "SPPR412.png", hexData: "SPPR412"},
+    //special skills for subclasses
+    {name: "Prawdziwe Widzenie", school: "SPECJALNE", level: 1, descriptionFile: "Prawdziwe Widzenie.txt", iconFile: "SPCL732.png", hexData: "SPCL732"},
+    {name: "Przeszywający Miecz", school: "SPECJALNE", level: 1, descriptionFile: "Przeszywający Miecz.txt", iconFile: "SPCL731.png", hexData: "SPCL731"},
+    {name: "Burzowa Tarcza", school: "SPECJALNE", level: 1, descriptionFile: "Burzowa Tarcza.txt", iconFile: "SPCL721.png", hexData: "SPCL721"},
+    {name: "Błyskawica", school: "SPECJALNE", level: 1, descriptionFile: "Błyskawica.txt", iconFile: "SPCL722.png", hexData: "SPCL722"},
+    {name: "Dar Lathandera", school: "SPECJALNE", level: 1, descriptionFile: "Dar Lathandera.txt", iconFile: "SPCL741.png", hexData: "SPCL741"},
+    {name: "Unieruchomienie nieumarłego", school: "SPECJALNE", level: 1, descriptionFile: "Unieruchomienie nieumarłego.txt", iconFile: "SPCL742.png", hexData: "SPCL742"},
+    {name: "Boskie Względy", school: "SPECJALNE", level: 1, descriptionFile: "Boskie Względy.txt", iconFile: "OHTYR2.png", hexData: "OHTYR2"},
+    {name: "Egzaltacja", school: "SPECJALNE", level: 1, descriptionFile: "Egzaltacja.txt", iconFile: "OHTYR1.png", hexData: "OHTYR1"},
+    {name: "Bitewny Chaos", school: "SPECJALNE", level: 1, descriptionFile: "Bitewny Chaos.txt", iconFile: "OHTMPS2.png", hexData: "OHTMPS2"},
+    {name: "Święta Moc", school: "SPECJALNE", level: 1, descriptionFile: "Święta Moc.txt", iconFile: "OHTMPS21.png", hexData: "OHTMPS21"},
+    
+  ]
+
+  for (const data of clericSpellData) {
+    await prisma.clericSpells.create({
+      data: {
+        name: data.name,
+        school: data.school,
+        level: data.level,
+        descriptionFile: data.descriptionFile,
+        iconFile: data.iconFile,
+        hexData: data.hexData
+      }
+    })
+  }
+}
+
+
 async function fillDataBase() {
   await insertStrengthData();
   await insertAgilityData();
@@ -616,6 +714,7 @@ async function fillDataBase() {
   await insertMalePortraitsData();
   await insertFemalePortraitsData();
   await insertWizardSpellData();
+  await insertClericSpellData();
 }
 
 

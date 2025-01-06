@@ -3,7 +3,7 @@ import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
 import { PrismaService } from './prisma.service';
-import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse } from './dto/attributes.dto';
+import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse, ClericSpellResponse } from './dto/attributes.dto';
 import { join } from 'path';
 import { createReadStream, existsSync } from 'fs';
 
@@ -131,6 +131,19 @@ export class AppController {
   async getWizardSpellData(): Promise<WizardSpellResponse[]> {
     const WizardSpellData = await this.prisma.wizardSpells.findMany()
     return WizardSpellData
+  }
+
+  @Get("/ClericSpells/ClericSpellsIcons/:spell")
+  getClericSpellIcon(
+    @Param('spell') spell: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', 'ClericSpells', 'ClericSpellsIcons', spell));
+    return new StreamableFile(file)
+  }
+  @Get("/clericdSpellData")
+  async getClericSpellData(): Promise<ClericSpellResponse[]> {
+    const ClericSpellData = await this.prisma.clericSpells.findMany()
+    return ClericSpellData
   }
 
   @Post('sendCharacter')
