@@ -3,7 +3,7 @@ import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
 import { PrismaService } from './prisma.service';
-import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse, ClericSpellResponse } from './dto/attributes.dto';
+import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse, ClericSpellResponse, BhaalspawnAbilitiesResponse } from './dto/attributes.dto';
 import { join } from 'path';
 import { createReadStream, existsSync } from 'fs';
 
@@ -140,11 +140,52 @@ export class AppController {
     const file = createReadStream(join(process.cwd(), 'upload', 'ClericSpells', 'ClericSpellsIcons', spell));
     return new StreamableFile(file)
   }
+
   @Get("/clericdSpellData")
   async getClericSpellData(): Promise<ClericSpellResponse[]> {
     const ClericSpellData = await this.prisma.clericSpells.findMany()
     return ClericSpellData
   }
+
+  @Get("/BhaalspawnAbilities/BhaalspawnAbilitiesIcons/:ability")
+  getBhaalspawnAbilitiesIcon(
+    @Param('ability') ability: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', 'BhaalspawnAbilities', 'BhaalspawnAbilitiesIcons', ability));
+    return new StreamableFile(file)
+  }
+  
+  @Get("/bhaallspawnAbiliteisData")
+  async getBhaalspawnAbilitiesData(): Promise<BhaalspawnAbilitiesResponse[]> {
+    const BhaalspawnAbilitiesData = await this.prisma.bhaalspawnAbilites.findMany()
+    return BhaalspawnAbilitiesData
+  }
+
+  @Get("/RaceIcons/:race")
+  getRaceIcon(
+    @Param('race') race: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', 'RaceIcons', race));
+    return new StreamableFile(file)
+  }
+
+  @Get("/ClassIcons/:classIcon")
+  getClassIcon(
+    @Param('classIcon') classIcon: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', 'ClassIcons', classIcon));
+    return new StreamableFile(file)
+  }
+
+  @Get("/images/:nonePortrait")
+  getNonePortrait(
+    @Param('portrait') portrait: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', 'images', portrait));
+    return new StreamableFile(file)
+  }
+
+
 
   @Post('sendCharacter')
   async createCharacter(@Body() characterData: any) {

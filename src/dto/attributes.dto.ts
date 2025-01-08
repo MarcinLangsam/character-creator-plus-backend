@@ -124,3 +124,11 @@ export interface ClericSpellResponse {
   iconFile: string;
   hexData: string;
 }
+
+export interface BhaalspawnAbilitiesResponse {
+  name: string;
+  school: string;
+  level: number;
+  descriptionFile: string;
+  iconFile: string;
+}

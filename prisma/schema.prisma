@@ -244,3 +244,12 @@ model ClericSpells {
   iconFile        String
   hexData         String
 }
+
+model BhaalspawnAbilites {
+  id              Int     @id @default(autoincrement())
+  name            String
+  school          String
+  level           Int
+  descriptionFile String
+  iconFile        String
+}

@@ -701,6 +701,30 @@ async function insertClericSpellData() {
 }
 
 
+async function insertBhaallspawnAbilitesData() {
+  const bhaalspawnAbilitiesData = [
+
+    {name: "Leczenie Lekkich Ran", school: "Nekroancja", level: 1, descriptionFile: "Leczenie Lekkich Ran.txt", iconFile: "SPPR103.png"},
+    {name: "Spowlonienie Trucizny", school: "Nekromancja", level: 2, descriptionFile: "Spowlonienie Trucizny.txt", iconFile: "SPPR212.png"},
+    {name: "Przywołanie Boskiej Mocy", school: "Inwokacje", level: 2, descriptionFile: "Przywołanie Boskiej Mocy.txt", iconFile: "SPPR214.png"},
+    {name: "Pomniejsze drążnie Larlocha", school: "Nekromancja", level: 1, descriptionFile: "Pomniejsze drążnie Larlocha.txt", iconFile: "SPWI119.png"},
+    {name: "Wampiryczne dotknięcie", school: "Nekromancja", level: 3, descriptionFile: "Wampiryczne dotknięcie.txt", iconFile: "SPWI314.png"},
+    {name: "Groza", school: "Nekroancja", level: 2, descriptionFile: "Groza.txt", iconFile: "SPWI205.png"},
+  ]
+
+  for (const data of bhaalspawnAbilitiesData) {
+    await prisma.bhaalspawnAbilites.create({
+      data: {
+        name: data.name,
+        school: data.school,
+        level: data.level,
+        descriptionFile: data.descriptionFile,
+        iconFile: data.iconFile,
+      }
+    })
+  }
+}
+
 async function fillDataBase() {
   await insertStrengthData();
   await insertAgilityData();
@@ -715,6 +739,7 @@ async function fillDataBase() {
   await insertFemalePortraitsData();
   await insertWizardSpellData();
   await insertClericSpellData();
+  await insertBhaallspawnAbilitesData();
 }
 
 
