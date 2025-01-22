@@ -1,0 +1,11 @@
+Ociemniałość
+(Iluzje/Urojenia)
+
+Poziom: 1
+Zasięg: 13 metrów
+Czas działania: 2 godziny
+Czas rzucania: 2
+Obszar działania: 1 istota
+Rzut obronny: neguje
+
+To 1. poziomowe zaklęcie oślepia tymczasowo ofiarę. Istota może wykonać rzut obronny przeciw czarom, by uchronić się przed jego efektami. Będąc pod wpływem czaru, wykonuje ona wszystkie ataki z modyfikatorem -4, a jej Klasa Pancerza zostaje pogorszona o 4.

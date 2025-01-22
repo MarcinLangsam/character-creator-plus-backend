@@ -1,0 +1,11 @@
+Płonące Dłonie
+(Przemiany)
+
+Poziom: 1
+Zasięg: 0
+Czas działania: natychmiastowy
+Czas rzucania: 1
+Obszar działania: 120 stopni stożek o promieniu 1,5 metra
+Rzut obronny: 1/2
+
+Kiedy mag rzuci to zaklęcie, z czubków jego palców wystrzeliwuje język płomieni. Czarodziej układa dłonie w taki sposób, jak gdyby wysyłał przed siebie strumień płomieni w kształcie wachlarza: kciuki muszą dotykać się nawzajem, zaś pozostałe palce pozostać rozłożone. Płomienie mają długość 1,5 metra i tworzą przed rzucającym czar poziomy łuk o kącie 120 stopni. Każda istota znajdująca się w obszarze działania zaklęcia otrzymuje 1k3 obrażeń od ognia +2 obrażenia na poziom czarującego, przy czym maksymalna liczba możliwych obrażeń wynosi 1k3 +20. Każdy, kto wykona rzut obronny przeciw czarom, otrzymuje połowę obrażeń.

@@ -1,0 +1,11 @@
+Infrawizja
+(Poznanie)
+
+Poziom: 1
+Zasięg: 10 metrów
+Czas działania: 2 godziny
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Osoba, na którą rzucono to zaklęcie, uzyskuje zdolność infrawizji, jaką posiadają elfy czy krasnoludy. Efekt ten utrzymuję się przez cały okres działania czaru lub do momentu jego rozproszenia.

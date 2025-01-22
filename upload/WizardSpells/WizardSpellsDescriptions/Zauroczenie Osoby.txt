@@ -1,0 +1,15 @@
+Zauroczenie Osoby
+(Zaczarowania/Zauroczenia)
+
+Poziom: 1
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 5 rund
+Czas rzucania: 1
+Obszar działania: 1 osoba
+Rzut obronny: neguje
+
+Zaklęcie to działa tylko na jedną osobę - tę, na którą zostało rzucone. Za "osobę" uważa się w tym wypadku dwunożnych ludzi, półludzi oraz humanoidy wielkości człowieka lub mniejsze, takie jak skrzaty, driady, krasnoludy, elfy, gnolle, gnomy, gobilny, półelfy, niziołki, półorkowie, hobgobliny, koboldy, jeszczuroludzie, rusałki, orkowie, chochliki, leśna duszki, troglodyci itp. Tak więc da się zauroczyć wojownika 10. poziomu ale nie ogra. Ofiarę zaklęcia może uratować rzut obronny przeciw czarom.
+
+Jeśli osobie będącej pod wpływem czaru nie powiedzie się rzut obronny, zaczyna ona postrzegać rzucającego zaklęcie jako zaufanego przyjaciela i sprzymierzeńca, którego należy ochraniać. Rzucający czar może wydać zauroczonej istocie rozkaz, które ta będzie wykonywała możliwie jak najszybciej.
+
+Jeśli rzucający czar w jawy sposób skrzywdzi lub spróbuje skrzywdzić zauroczoną istotę, lub też, gdy zostanie a nią rzucone zaklęcie Rozproszenie Magii, efekt Zauroczenia zostaje przerwany. Jeśli na istotę działają jednocześnie dwa Zauroczenia, pierwszeństwo będzie mieć to, które zostało rzucone później. Warto zwrócić uwagę, że zauroczony pamięta wszystko co miało miejsce podczas działania zaklęcia, a ponadto nie może on opuścić obszaru, na którym rzucono nań ten czar

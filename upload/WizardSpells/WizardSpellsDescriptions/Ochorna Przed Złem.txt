@@ -1,0 +1,11 @@
+Ochrona Przed Złem
+(Odrzucanie)
+
+Poziom: 1
+Zasięg: dotyk
+Czas działania: 2 rundy/poziom
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Czar ten tworzy wokół wybranej istoty magiczną barierę, rozciągającą się na odległość trzydziestu centymetrów. Bariera ta przemieszcza się wraz z nią i działa na dwa sposoby. Po pierwsze, wszystkie stworzenia o charakterze złym, lub których charakter stał się zły za pomocą magii, otrzymują modyfikator -2 do każdego testu ataku wykonywanego przeciw istocie chronionej barierą. Po drugie, przyzwane demony nie mogą atakować chroniopnej istoty.

@@ -1,0 +1,11 @@
+Odbity Obraz
+(Iluzje/Urojenia)
+
+Poziom: 1
+Zasięg: 0
+Czas działania: 3 rundy + 1 runda/poziom
+Czas rzucania: 1
+Obszar działania: rzucający czar
+Rzut obronny: bark
+
+Po rzuceniu tego czaru mag tworzy obraz samego siebie, który będzie podążał wraz z nim i wykonywał dokładnie te same czynności. W efekcie, istoty atakujące maga nie będą w stanie rozróżnić, która z postaci jest prawdziwa, a która tylko kopią. Istnieje 50% szans na to, że przeciwnik zaatakuje obraz i 50% szans, że zaatakuje maga. Obraz zniknie, jeśli rzucone zostanie Rozproszenie magii, zostanie zaatakowany, lub jeśli upłynie czas działania czaru.

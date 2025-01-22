@@ -73,13 +73,14 @@ model Charisma {
 // Tabela dla postaci (ogólne dane)
 model Character {
   id                Int      @id @default(autoincrement())
+  level             Int?
   name              String?
   gender            String?
   portrait          String?
   race              String?
   classes           String?
   subclasses        String?
-  characterName     String?
+  aligment          String?
   strength          Int?
   agility           Int?
   constitution      Int?
@@ -90,12 +91,17 @@ model Character {
   skillsId          Int?
   skillsThief       ThievingAbilities?   @relation(fields: [skillsThiefId], references: [id])
   skillsThiefId     Int?
+  racialEnemy       String?
+  baseThac0         Int?
   melleThac0        Int?
+  classBonusThac0   Int?
   dmgBonus          Int?
   bashing           Int?
   weight            Int?
   rangedThac0       Int?
+  baseAC            Int?
   AC                Int?
+  classBonusAC      Int?
   Kradziez_KieszonkowaBonus Int?
   Otwieranie_ZamkowBonus    Int?
   Znajdywanie_PulapekBonus   Int?
@@ -103,7 +109,6 @@ model Character {
   Krycie_W_CieniuBonus   Int?
   Rozstawianie_PulapekBonus    Int?
   HPdice            Int?
-  HP                Int?
   HPperLvBonus      Int?
   IntoxicationPerDrink Int?
   fatigue           Int?
@@ -118,6 +123,7 @@ model Character {
   WISlore           Int?
   reaction          Int?
   buyDiscount       Int?
+  bonuses           String?
 }
 
 // Tabela dla umiejętności broni
@@ -223,7 +229,6 @@ model FemalePortraits {
   id              Int     @id @default(autoincrement())
   fileName        String
 }
-
 
 model WizardSpells {
   id              Int     @id @default(autoincrement())

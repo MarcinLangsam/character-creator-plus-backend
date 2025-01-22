@@ -1,0 +1,11 @@
+Magiczny Pocisk
+(Wywoływanie)
+
+Poziom: 1
+Zasięg: pole widzenia rzucającego czar
+Czas działania: natychmiastowy
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Jest to jeden z najpopularniejszych czarów pierwszego poziomu. Dzięki niemu mag tworzy z magicznej energii do pięciu pocisków, które wylatują z jego palca i bezbłędnie trafiają w wybraną istotę. Każdy pocisk zadaje 1k4 +1 obrażeń. Na każde dwa poziomy doświadczenia mag otrzymuje jeden dodatkowy pocisk tzn. na trzecim ma dwa, na piątym - trzy, na siódmym - cztery i maksymalnie pięć na dziewiątym i wyższych poziomach.

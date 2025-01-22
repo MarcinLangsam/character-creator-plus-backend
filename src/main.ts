@@ -514,7 +514,7 @@ async function insertWizardSpellData() {
     {name: "Tarcza", school: "Wywoływanie", level: 1, descriptionFile: "Tarcza.txt", iconFile: "SPWI114.png", hexData: "SPWI114"},
     {name: "Uśpeine", school: "Zaczarowania/Zauroczenia", level: 1, descriptionFile: "Uśpeine.txt", iconFile: "SPWI116.png", hexData: "SPWI116"},
     {name: "Zauroczenie Osoby", school: "Zaczarowania/Zauroczenia", level: 1, descriptionFile: "Zauroczenie Osoby.txt", iconFile: "SPWI104.png", hexData: "SPWI104"},
-    {name: "Zbroja", school: "Sprowadzanie", level: 1, descriptionFile: "Zbroja.txt", iconFile: "SPWI102.png", hexData: "SPWI102"},
+    {name: "Zbroja", school: "Sprowadzanie", level: 1, descriptionFile: "Zbroja.txt", iconFile: "SPWI102.png", hexData: "SPWI102"}, //TERAZ TURAJ
     {name: "Zmiennobarwna Kula", school: "Wywoływanie", level: 1, descriptionFile: "Zmiennobarwna kula.txt", iconFile: "SPWI118.png", hexData: "SPWI118"},
     {name: "Zamrażający Dotyk", school: "Nekromancja", level: 1, descriptionFile: "Zamrażający Dotyk.txt", iconFile: "SPWI117.png", hexData: "SPWI117"},
     {name: "Śliskość", school: "Sprowadzanie/Przywoływanie", level: 1, descriptionFile: "Śliskość.txt", iconFile: "SPWI101.png", hexData: "SPWI101"},

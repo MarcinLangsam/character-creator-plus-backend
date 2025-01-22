@@ -1,0 +1,11 @@
+Uśpienie
+(Zaczarowania/Zauroczenia)
+
+Poziom: 1
+Zasięg: pole widzenia rzucającego czar
+Czas działania: 5 rund/poziom
+Czas rzucania: 1
+Obszar działania: obszar działania w promieniu 5 metrów
+Rzut obronny: neguje
+
+Czar ten wprowadza jedną lub więcej istot w podobny do śpiączki stan (nie działa jednak na nieumarłych i niektóre stworzenia odporne na efekty uśpienia). Wszystkie istoty, na które zaklęcia to ma wpłynąć, musza znajdować się w promieniu 5 metrów od punktu, w którym zostało rzucone. Istoty znajdujące się w obszarze działania czaru muszę wykonać rzut obronny przeciw śmierci z modyfikatorem -3 lub padną jego ofiarą. Potwory o liczbie Kostek 5 lub więcej są odporne na działanie tego czaru. Ciosy wyprowadzane przeciw śpiącym istotom są zawsze celne.

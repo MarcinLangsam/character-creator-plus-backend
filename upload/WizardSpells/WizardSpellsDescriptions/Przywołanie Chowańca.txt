@@ -1,0 +1,15 @@
+Przywołanie Chowańca
+(Sprowadzanie/Przywoływanie)
+
+Poziom: 1
+Zasięg: nie dotyczy
+Czas działania: specjalny
+Czas rzucania: 9
+Obszar działania: 1 chowaniec
+Rzut obronny: brak
+
+Czar ten pozwala rzucającemu podjąć próbę przywołania chowańca, który będzie mu służył za pomocnika i towarzysza. Ta zazwyczaj niewielka istota może przynieść czarodziejowi wiele korzyści, przekazując mu informacje swymi wyostrzonymi zmysłami, zabawiając go rozmową lub służąc za strażnika, zwiadowcę, czy szpiega. Czarodziej może mieć tylko jednego chowańca na raz i nie ma wpływu na to, jaką istotę przywoła i czy w ogóle mu się to uda.
+
+(Uwaga: Tylko główna postać może rzucić to zaklęcie.)
+
+Wezwana istota zawsze jest inteligentniejsza od przeciętnego przedstawiciela swojej rasy (zazwyczaj o 2-3 punkty Inteligencji), a więź ze swym panem zapewnia jej długowieczność. Czarodziej posiada telepatyczną łączność z chowańcem i może mu wydawać dowolne polecenia. Rzucający zaklęcia uzyskuje połowę punktów życia chowańca (zaokrąglone w dół) jako premię do własnych punktów życia. Musi jednak dbać o swego podopiecznego, gdyż w razie jego śmierci, straci te dodatkowe punkty życia, a oprócz tego otrzyma tyle samo obrażeń, ile punktów życia posiada chowaniec. Ponadto, w przypadku śmierci chowańca, czarodziej straci również NA STAŁE jeden punkt Kondycji.

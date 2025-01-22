@@ -3,7 +3,7 @@ import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
 import { PrismaService } from './prisma.service';
-import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse, ClericSpellResponse, BhaalspawnAbilitiesResponse } from './dto/attributes.dto';
+import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse, ClericSpellResponse, BhaalspawnAbilitiesResponse, CharacterResponse } from './dto/attributes.dto';
 import { join } from 'path';
 import { createReadStream, existsSync } from 'fs';
 
@@ -185,36 +185,46 @@ export class AppController {
     return new StreamableFile(file)
   }
 
-
+  @Get('/characters')
+  async getCharacters(): Promise<CharacterResponse[]> {
+    const Characetr = await this.prisma.character.findMany()
+    return Characetr
+  }
 
   @Post('sendCharacter')
   async createCharacter(@Body() characterData: any) {
     const {
+      level,
       name,
       gender,
       portrait,
       race,
       classes,
       subclasses,
+      aligment,
       attributes,
       skills,
-      //skillsThief,
+      skillsThief,
+      racialEnemy,
+      baseThac0,
       melleThac0,
+      classBonusThac0,
       dmgBonus,
       bashing,
       weight,
 
       rangedThac0,
+      baseAC,
       AC,
-      Kradziez_KieszonkowaBonus, 
-      Otwieranie_ZamkowBonus,
-      Znajdywanie_PulapekBonus,
+      classBonusAC,
+      Kradzież_KieszonkowaBonus, 
+      Otwieranie_ZamkówBonus,
+      Znajdywanie_PułapekBonus,
       Ciche_PoruszanieBonus,
       Krycie_W_CieniuBonus,
-      Rozstawianie_PulapekBonus,
+      Rozstawianie_PułapekBonus,
 
       HPdice,
-      HP,
 
       HPperLvBonus,
       IntoxicationPerDrink,
@@ -233,24 +243,27 @@ export class AppController {
 
       reaction,
       buyDiscount,
+      bonuses,
     } = characterData;
 
      const weaponProficiencys = await this.prisma.weaponProficiencys.create({
        data: {...skills},
      })
 
-     //const thievingAbilities = await this.prisma.thievingAbilities.create({
-     //  ...skillsThief,
-     //})
+     const thievingAbilities = await this.prisma.thievingAbilities.create({
+       data: {...skillsThief}
+     })
 
     const character = await this.prisma.character.create({
       data: {
-        name,
-        gender,
-        portrait,
-        race,
-        classes,
-        subclasses,
+        level: level,
+        name: name,
+        gender: gender,
+        portrait: portrait,
+        race: race,
+        classes: classes,
+        subclasses: subclasses,
+        aligment: aligment,
         strength: attributes.strength,
         agility: attributes.agility,
         constitution: attributes.constitution,
@@ -258,41 +271,46 @@ export class AppController {
         wisdom: attributes.wisdom,
         charisma: attributes.charisma,
         skillsId: weaponProficiencys.id,
-        //skillsThiefId: thievingAbilities.id,
-        melleThac0,
-        dmgBonus,
-        bashing,
-        weight,
+        skillsThiefId: thievingAbilities.id,
+        racialEnemy: racialEnemy,
+        baseThac0: baseThac0,
+        melleThac0: melleThac0,
+        classBonusThac0: classBonusThac0,
+        dmgBonus: dmgBonus,
+        bashing: bashing,
+        weight: weight,
 
-        rangedThac0,
-        AC,
-        Kradziez_KieszonkowaBonus, 
-        Otwieranie_ZamkowBonus,
-        Znajdywanie_PulapekBonus,
-        Ciche_PoruszanieBonus,
-        Krycie_W_CieniuBonus,
-        Rozstawianie_PulapekBonus,
+        rangedThac0: rangedThac0,
+        baseAC: baseAC,
+        AC: AC,
+        classBonusAC: classBonusAC,
+        Kradziez_KieszonkowaBonus: Kradzież_KieszonkowaBonus, 
+        Otwieranie_ZamkowBonus: Otwieranie_ZamkówBonus,
+        Znajdywanie_PulapekBonus: Znajdywanie_PułapekBonus,
+        Ciche_PoruszanieBonus: Ciche_PoruszanieBonus,
+        Krycie_W_CieniuBonus: Krycie_W_CieniuBonus,
+        Rozstawianie_PulapekBonus: Rozstawianie_PułapekBonus,
 
-        HPdice,
-        HP,
+        HPdice: HPdice,
 
-        HPperLvBonus,
-        IntoxicationPerDrink,
-        fatigue,
+        HPperLvBonus: HPperLvBonus,
+        IntoxicationPerDrink: IntoxicationPerDrink,
+        fatigue: fatigue,
 
-        INTmaxSpellLevel,
-        INTspellPerLevel,
-        scribeSuccessRate,
-        INTlore,
+        INTmaxSpellLevel: INTmaxSpellLevel,
+        INTspellPerLevel: INTspellPerLevel,
+        scribeSuccessRate: scribeSuccessRate,
+        INTlore: INTlore,
 
-        extraSpellSlotlv1,
-        extraSpellSlotlv2,
-        extraSpellSlotlv3,
-        extraSpellSlotlv4,
-        WISlore,
+        extraSpellSlotlv1: extraSpellSlotlv1,
+        extraSpellSlotlv2: extraSpellSlotlv2,
+        extraSpellSlotlv3: extraSpellSlotlv3,
+        extraSpellSlotlv4: extraSpellSlotlv4,
+        WISlore: WISlore,
 
-        reaction,
-        buyDiscount,
+        reaction: reaction,
+        buyDiscount: buyDiscount,
+        bonuses: bonuses,
       },
     });
 

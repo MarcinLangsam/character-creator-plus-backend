@@ -1,0 +1,11 @@
+Przyjaciele
+(Zaczarowania/Zauroczenia)
+
+Poziom: 1
+Zasięg: 0
+Czas działania: 1k4 rund + 1 runda/poziom
+Czas rzucania: 1
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Czar ten zwiększa tymczasowo Charyzmę czarodzieja o 6 punktów, co sprawia, że każdy, kto na niego spojrzy znajdzie się pod wrażeniem jego osoby i będzie się starał zostać jego przyjacielem oraz pomaga mi w zależności od sytuacji. Natrętni biurokraci mogą stać się nagle bardzo pomocni, gburowaci strażnicy zechcą podzielić się informacjami, zaś atakujący orkowie zdecydują się oszczędzić czarodzieja, biorąc go w zamian do niewoli.

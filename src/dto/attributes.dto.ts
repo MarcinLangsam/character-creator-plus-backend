@@ -1,3 +1,5 @@
+import { ThievingAbilities, WeaponProficiencys } from "@prisma/client";
+
 export interface StrenghtResponse {
     id: number;
     value: number;
@@ -131,4 +133,63 @@ export interface BhaalspawnAbilitiesResponse {
   level: number;
   descriptionFile: string;
   iconFile: string;
+}
+
+export interface CharacterResponse {
+  level: number;
+  name: string;
+  gender: string;
+  portrait: string;
+  race: string;
+  classes: string;
+  subclasses: string;
+  aligment: string,
+  strength: number;
+  agility: number,
+  constitution: number,
+  intelligence: number,
+  wisdom: number,
+  charisma: number,
+  skillsId: number,
+  skillsThiefId: number,
+  racialEnemy: string;
+
+  baseThac0: number,
+  melleThac0: number,
+  classBonusThac0: number,
+  dmgBonus: number,
+  bashing: number,
+  weight: number,
+
+  rangedThac0: number,
+  baseAC: number,
+  AC: number,
+  classBonusAC: number,
+  Kradziez_KieszonkowaBonus: number, 
+  Otwieranie_ZamkowBonus: number,
+  Znajdywanie_PulapekBonus: number,
+  Ciche_PoruszanieBonus: number,
+  Krycie_W_CieniuBonus: number,
+  Rozstawianie_PulapekBonus: number,
+
+  HPdice: number,
+
+  HPperLvBonus: number,
+  IntoxicationPerDrink: number,
+  fatigue: number,
+
+  INTmaxSpellLevel: number,
+  INTspellPerLevel: number,
+  scribeSuccessRate: number,
+  INTlore: number,
+
+  extraSpellSlotlv1: number,
+  extraSpellSlotlv2: number,
+  extraSpellSlotlv3: number,
+  extraSpellSlotlv4: number,
+  WISlore: number,
+
+  reaction: number,
+  buyDiscount: number,
+  bonuses: string;
 }

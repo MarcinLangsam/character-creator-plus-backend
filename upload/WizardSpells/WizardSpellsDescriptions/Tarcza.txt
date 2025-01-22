@@ -1,0 +1,11 @@
+Tarcza
+(Wywoływanie)
+
+Poziom: 1
+Zasięg: 0
+Czas działania: 1 godzina
+Czas rzucania: 1
+Obszar działania: rzucający czar
+Rzut obronny: brak
+
+Po rzuceniu tego czaru, przed czarodziejem pojawia się niewidzialna bariera, zapewniająca mu KP 4 przeciw broniom do walki wręcz i KP 2 przeciw pociskom, a także niewrażliwość na działanie zaklęcia Magiczny Pocisk. Efekt ten utrzymuje się przez cały okres działania czaru lub do momentu jego rozproszenia.

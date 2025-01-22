@@ -1,0 +1,11 @@
+Ochrona Przed Petryfikacją
+(Odrzucanie)
+
+Poziom: 1
+Zasięg: dotyk
+Czas działania: 1 godzina
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: brak
+
+Zaklęcie to zapewnia osobie, na którą zostanie rzucony, odporność na wszelkie ataki powodujące petryfikacje. Do ataków tych zalicza się spojrzenie bazyliszka lub meduzy, przeklęte pergaminy przemieniające czytających w kamień itp.

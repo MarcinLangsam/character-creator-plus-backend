@@ -1,0 +1,11 @@
+Porażający uścisk
+(Przemiany)
+
+Poziom: 1
+Zasięg: dotyk
+Czas działania: specjalny
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: bark
+
+Kiedy mag rzucił to zaklęcie, dotknie jakiejś istoty, uwolniony zostanie elektryczny ładunek powodujący 1k8 obrażeń +1 na poziom czarującego. Dodatkowo ofiara otrzyma 1k2 obrażeń od uderzenia pięścią (stosuje się przy tym premie do Siły). Czarodziej może porazić ofiarę tylko raz - po dotknięciu energia czaru zostanie zużyta. Mag, który nie trafi ofiary po jednej rundzie na poziom, po prostu zmarnuje czar.

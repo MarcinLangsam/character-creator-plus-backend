@@ -1,0 +1,11 @@
+Przerażenie
+(Iluzje/Urojenia)
+
+Poziom: 1
+Zasięg: 10 metrów
+Czas działania: 3 rundy
+Czas rzucania: 1
+Obszar działania: 1 istota
+Rzut obronny: neguje
+
+Przerażenie to zaklęcie pozwalające czarodziejowi wywołać u ofiary jej wrodzone lęki, dzięki czemu ta postrzega go jako kogoś lub coś nieprzyjaznego, co zdaje się zbliżać ku niej z wrogimi zamiarami. Jeżeli ofiara nie wykona rzutu obronnego przeciw czarom, odwraca się i zaczyna uciekać od czarodzieja z maksymalną możliwa szybkością. Stworzenie otrzymuje również modyfikator do wszystkich rzutów obronnych, wynoszący -1 na każde dwa poziomy czarującego (maksymalnie -6 na 12 poziomie). Mimo iż sam czarodziej nie ściga uciekającej istoty, robi to wytwór jego wyobraźni. Nieumarli są całkowicie niepodatni na działanie tego zaklęcia.

@@ -1,0 +1,11 @@
+Migoczące Barwy
+(Przemiany)
+
+Poziom: 1
+Zasięg: 16 metrów
+Czas działania: specjalny
+Czas rzucania: 1
+Obszar działania: 90 stopni stożek
+Rzut obronny: specjalny
+
+Czar ten tworzy wachlarz oślepiająco jaskrawych barw, wystrzeliwanych wprost z dłoni rzucającego. Pod wpływem tego zaklęcia może się znaleźć 1k6 istot, przebywających w obszarze jego działania (najpierw obejmowane są te, które znajdują się bliżej czarodzieja). Wszystkie istoty posiadające 4 lub mniej Kostek muszą wykonać rzut obronny, lub stracą przytomność na pięć rund.

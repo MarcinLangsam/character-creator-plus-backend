@@ -1,0 +1,11 @@
+Identyfikacja
+(Poznanie)
+
+Poziom: 1
+Zasięg: 0
+Czas działania: natychmiastowy
+Czas rzucania: specjalny
+Obszar działania: 1 przedmiot
+Rzut obronny: brak
+
+Po zapamiętaniu tego zaklęcia należy przejść na stronę opisu niezidentyfikowanego przedmiotu i nacisnąć przycisk Identyfikuj. Szansa za zidentyfikowanie przedmiotu wynosi 100%. Zaklęcia pozwala poznać nazwę przedmiotu, jego właściwości i ustalić, czy nie jest przeklęty.
