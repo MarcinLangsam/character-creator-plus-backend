@@ -3,7 +3,7 @@ import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
 import { PrismaService } from './prisma.service';
-import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse, ClericSpellResponse, BhaalspawnAbilitiesResponse, CharacterResponse } from './dto/attributes.dto';
+import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse, ClericSpellResponse, BhaalspawnAbilitiesResponse, CharacterResponse, WeaponsRespone, TheivingRespone } from './dto/attributes.dto';
 import { join } from 'path';
 import { createReadStream, existsSync } from 'fs';
 
@@ -191,6 +191,31 @@ export class AppController {
     return Characetr
   }
 
+  @Get('/weapons/:id')
+  async getWeapons(
+    @Param('id') id: number,
+  ): Promise<WeaponsRespone> {
+    const Weapons = await this.prisma.weaponProficiencys.findUnique({
+      where: {
+        id: Number(id),
+      },
+    })
+    return Weapons
+  }
+
+  @Get('/thieving/:id')
+  async getThieving(
+    @Param('id') id: number,
+  ): Promise<TheivingRespone> {
+    const Thieving = await this.prisma.thievingAbilities.findUnique({
+      where: {
+        id: Number(id),
+      },
+    })
+    return Thieving
+  }
+
+  
   @Post('sendCharacter')
   async createCharacter(@Body() characterData: any) {
     const {
