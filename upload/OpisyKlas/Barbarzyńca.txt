@@ -1,0 +1,16 @@
+KOŚĆ ZDROWIA: K12
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Nie może nosić zbroi cięższej niż paskowa,
+- Może używać każdego typu broni,
+- Może osiągnąć Specjalizacje (2 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a do styli walki dwoma broniami 3 punkty
+- Zwiększona szybkość poruszania się o 2
+- Niewrażliwość na cios w plecy
+- Może wpaść w SZAŁ, raz dziennie na 4 poziomy
+- 11. poziom: Barbarzyńca zyskuje 10% odporności na obrażenia sieczne, kłute, obuchowe i pociski. Premie te wzrastają o kolejne 5% na poziomach 15. i 19.
+
+SZAŁ: Będąc w trakcie szału, postać otrzymuje na 5 rund premię +4 do Siły i Kondycji i +2 do rzutów obronnych przeciw czarom oraz karę -2 do KP. Ponadto szał zapewnia niewrażliwość na zauroczenie, unieruchomienie, strach, labirynt, ogłuszenia, sen, zamęt, wyssanie poziomu
+
+

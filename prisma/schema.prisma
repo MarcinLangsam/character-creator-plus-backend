@@ -82,6 +82,7 @@ model Character {
   subclasses        String?
   aligment          String?
   strength          Int?
+  strengthModifier  Int?
   agility           Int?
   constitution      Int?
   intelligence      Int?

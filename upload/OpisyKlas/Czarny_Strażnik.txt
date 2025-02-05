@@ -1,0 +1,20 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego typu broni i zbroi,
+- Może osiągnąć specjalizacje (2 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a w stylu walki dwoma broniami może przydzielić 3 punkty,
+- Może Odpędzać nieumarłych,
+- Może rzucać czary kałana od 9 poziomu,
+- Niewrażliwość na strach,
+- Niewrażliwość na wyssanie poziomów,
+- Raz dziennie może korzystać ze zdolności ABSORBOWANIE ZDROWIA,
+- Może używać zdolności ZATRUTA BROŃ, raz dziennie od 1. poziomu, dwóch użyć na 5. poziomie i dodatkowym użyciem co pięć kolejnych poziomów,
+- Na 3. poziomie może używać zdolności AURA ROZPACZY,
+
+Wady:
+- NIE może rzucać NAKŁADANIE RĄK, WYKRYCIE ZŁA,
+- NIE może korzystać ze zdolności wrodzonej OCHORNA PRZEZ ZŁEM,
+
+Musi mieć charakter ZŁY

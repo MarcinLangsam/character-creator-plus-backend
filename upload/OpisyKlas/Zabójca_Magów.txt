@@ -1,0 +1,13 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego typu broni i zbroi,
+- Może osiągnąć wielkie mistrzostwo (5 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a do styli walki dwoma broniami 3 punkty
+- Każde trafienie daje 25% szans na nieudane rzucenie czaru u przeciwnika (efekty kolejnych trafień kumulują się),
+- 1% odporności na magię na poziom, aż do 19. poziomu,
+- Po osiągnieciu 20. poziomu odporność na magię wzrasta na przemian o 5% i 1% na poziom,
+
+Wady:
+- Nie może posługiwać się żadnymi przedmiotami magicznymi (z wyjątkiem broni i zbroi),

@@ -1,0 +1,20 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego typu broni i zbroi (oprócz broni dystansowej),
+- Może osiągnąć specjalizacje (2 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a w stylu walki dwoma broniami może przydzielić 3 punkty
+- Może rzucać NAKŁADANIE RĄK, LECZENIE CHORÓB, Wykrycie Zła
+- Może Odpędzać nieumarłych
+- Może rzucać czary kałana od 9 poziomu
+- +3 do testów trafienia i obrażeń przeciwko demonom, biesom, smokom i wiwernom,
+- Może rzucać PRZEŁAMANIE STRACHU raz dziennie na poziom,
+- Niewrażliwość na zauroczenie, strach, trucizny i załamanie morale,
+- Odporność na ogień +20%
+- Odporność na kwas +20%
+
+Wady:
+- Nie może posługiwać się bronią dystansową,
+
+Musi mieć charakter praworządny dobry

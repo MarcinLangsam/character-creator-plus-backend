@@ -1,0 +1,32 @@
+KOŚĆ ZDROWIA: K8
+
+CECHY KLASOWE:
+- Nie może nosić żadnej zbroi,
+- Może używać tylko jednoręcznych broni dostępnych dla złodziei,
+- Może osiągnąć wyszkolenie (1 punkt) w dostępnych rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) tylko do stylu walki bronią jednoręczną,
+- Zwiększona szybkość poruszania o 2, wzrasta o kolejny punkt co 5 poziomów
+- Może wykonać jeden atak pięścią na rundę i zyskuje dodatkowe 1/2 ataki co trzy poziomy oraz zwiększa zadawane obrażenia pięściami,
+- Mnich uzyskuje +2 do rzutów obronnych przeciw czarom,
+- +1 do KP przeciw pociskom co 3 poziomy,
+- Bazowe KP to 9 i wzrasta o 1 co dwa poziomy,
+- Może wykrywać iluzje i inwestować z nią punkty,
+- Może używać zdolności ZAMRAŻAJĄCY DOTYK, raz dziennie co 4 poziomy,
+
+- Na 1. poziomie: Może rzucić czar OCIEMNIAŁOŚĆ, raz dziennie,
+- Na 3. poziomie: Może rzucić czar ROZMYCIE, raz dziennie,
+- Na 5. poziomie: Niewrażliwość na choroby, spowolnienie ORAZ przyśpieszenie,
+- Na 7. poziomie: WAMPIRYCZNE DOTKNIĘCIE,
+- Na 8. poziomie: -1 do opóźnienia,
+- Na 9. poziomie: +1 do wszystkich rzutów obronnych, niewrażliwość na zauroczenie,
+- Na 11. poziomie: Niewrażliwość na trucizny oraz rzucić czar LUSTRZANE ODBICIE, raz dziennie
+- Na 12. poziomie: Kolejne -1 do opóźnienia,
+- Na 13. poziomie: Może użyć DRŻĄCĄ DŁOŃ, raz dziennie,
+- Na 14. poziomie: +3% odporności na magię na poziom (zaczynając z +42% na 14. poziomie),
+- Na 20. poziomie: Mnich uzyskuje odporność na niemagiczną broń,
+
+Wady:
+- Nie może używać zdolności NAKŁADANIE RĄK,
+- Nie może używać zdolności OGŁUSZAJĄCY CIOS,
+
+Musi mieć charakter praworządny ZŁY

@@ -1,11 +1,14 @@
-import { Controller, Get, Param, Res, NotFoundException, StreamableFile, Post, Body } from '@nestjs/common';
+import { Controller, Get, Param, Res, NotFoundException, StreamableFile, Post, Body, UseInterceptors, UploadedFile } from '@nestjs/common';
 import { AppService } from './app.service';
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from 'express';
 import { PrismaService } from './prisma.service';
 import { AgilityResponse, AlignmentResponse, CharismaResponse, ConstitutionRespone, InteligenceResponse, StrenghtResponse, WisdomResponse, ProficiencysToSubclass, ThievingAbilitiesToSubclass, PortraitsRespone, WizardSpellResponse, ClericSpellResponse, BhaalspawnAbilitiesResponse, CharacterResponse, WeaponsRespone, TheivingRespone } from './dto/attributes.dto';
-import { join } from 'path';
-import { createReadStream, existsSync } from 'fs';
+import { extname, join, parse } from 'path';
+import { createReadStream, copyFileSync } from 'fs';
+import { FileInterceptor } from '@nestjs/platform-express';
+import { diskStorage } from "multer";
+import { Multer } from "multer"; 
 
 const prisma = new PrismaClient();
 
@@ -141,7 +144,7 @@ export class AppController {
     return new StreamableFile(file)
   }
 
-  @Get("/clericdSpellData")
+  @Get("/clericSpellData")
   async getClericSpellData(): Promise<ClericSpellResponse[]> {
     const ClericSpellData = await this.prisma.clericSpells.findMany()
     return ClericSpellData
@@ -191,7 +194,7 @@ export class AppController {
     return Characetr
   }
 
-  @Get('/weapons/:id')
+  @Get('/weapons:id')
   async getWeapons(
     @Param('id') id: number,
   ): Promise<WeaponsRespone> {
@@ -203,7 +206,7 @@ export class AppController {
     return Weapons
   }
 
-  @Get('/thieving/:id')
+  @Get('/thieving:id')
   async getThieving(
     @Param('id') id: number,
   ): Promise<TheivingRespone> {
@@ -215,6 +218,53 @@ export class AppController {
     return Thieving
   }
 
+  @Get("/Music/:name")
+  getMusic(
+    @Param('name') name: string,
+  ): StreamableFile {
+    const file = createReadStream(join(process.cwd(), 'upload', 'Music', name));
+    return new StreamableFile(file)
+  }
+
+  @Post("/uploadPortrait")
+  @UseInterceptors(
+    FileInterceptor("file", {
+      storage: diskStorage({
+        destination: "./upload/MalePortraits", // Główna lokalizacja
+        filename: (req, file, cb) => {
+          const originalNameWithoutExt = parse(file.originalname).name; // Nazwa pliku bez rozszerzenia
+          const newFilename = `${originalNameWithoutExt}.png`; // Zmieniamy rozszerzenie na .png
+          cb(null, newFilename);
+        },
+      }),
+    })
+  )
+  async uploadFile(@UploadedFile() file: Express.Multer.File) {
+    try {
+      const sourcePath = `./upload/MalePortraits/${file.filename}`;
+      const secondDestination = `./upload/FemalePortraits/${file.filename}`; // Druga lokalizacja
+
+      // Kopiowanie pliku do drugiej lokalizacji
+      copyFileSync(sourcePath, secondDestination);
+
+      await this.prisma.malePortraits.create({
+        data: { fileName: file.filename },
+      });
+
+      await this.prisma.femalePortraits.create({
+        data: { fileName: file.filename },
+      });
+
+      console.log("Plik zapisany:", file);
+      return {
+        message: "Plik przesłany i zapisany w dwóch lokalizacjach!",
+        filePaths: [`/upload/MalePortraits/${file.filename}`, `/upload/FemalePortraits/${file.filename}`],
+      };
+    } catch (error) {
+      console.error("Błąd podczas kopiowania pliku:", error);
+      throw error;
+    }
+  }
   
   @Post('sendCharacter')
   async createCharacter(@Body() characterData: any) {
@@ -290,6 +340,7 @@ export class AppController {
         subclasses: subclasses,
         aligment: aligment,
         strength: attributes.strength,
+        strengthModifier: attributes.strengthModifier,
         agility: attributes.agility,
         constitution: attributes.constitution,
         intelligence: attributes.intelligence,

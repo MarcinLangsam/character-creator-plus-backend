@@ -1,11 +1,11 @@
+KOŚĆ ZDROWIA: K8
+
 CECHY KLASOWE:
 - Może nosić jedynie zbroję skórzaną, zbroję skórzaną grubą oraz ćwiekowaną, oraz nie może używać tarczy większej niż puklerz
 - Może używać tylko: sztylet, maczuga, włócznia, topór, kij, strzałka, proca, krótki łuk,
-- Może osiągnąć wyszkolenie(1 punkt) w dostępnym rodzaju broni,
-- Może osiągnąć wyszkolenie(1 punkt) do każdego stylu walki,
+- Może osiągnąć wyszkolenie (1 punkt) w dostępnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki,
 - Może rzucać zaklęcia druida,
 - Wybiera zaklęcia druida przy awansie i rzucać je bez zapamiętywania,
-- Może używać zaklęć szamana oraz szamański taniec
-- Ma dostęp do Wykrywania Ilizji
-
-KOŚĆ ZDROWIA: K8
+- Może używać zaklęć szamana oraz SZAMAŃSKI TANIEC
+- Ma dostęp do Wykrywania Iluzji rozpoczynając z wartości 20 i zyskując +4 co poziom (aż do osiągnięcia maksimum 100 na 20. poziomie)

@@ -1,0 +1,32 @@
+KOŚĆ ZDROWIA: K8
+
+CECHY KLASOWE:
+- Nie może nosić żadnej zbroi,
+- Może używać tylko jednoręcznych broni dostępnych dla złodziei,
+- Może osiągnąć wyszkolenie (1 punkt) w dostępnych rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) tylko do stylu walki bronią jednoręczną,
+- Zwiększona szybkość poruszania o 2, wzrasta o kolejny punkt co 5 poziomów
+- Może wykonać jeden atak pięścią na rundę i zyskuje dodatkowe 1/2 ataki co trzy poziomy oraz zwiększa zadawane obrażenia pięściami,
+- Mnich uzyskuje +2 do rzutów obronnych przeciw czarom,
+- +1 do KP przeciw pociskom co 3 poziomy,
+- Bazowe KP to 9 i wzrasta o 1 co dwa poziomy,
+
+- Na 2. poziomie: Może rzucić PROMIEŃ SŁONECZNEJ DUSZY, raz dziennie,
+- Na 5. poziomie: Niewrażliwość na choroby, spowolnienie ORAZ przyśpieszenie, może rzucać PŁOMIENNE PIĘŚCI, raz dziennie
+- Na 6. poziomie: Dodatkowe użycie PROMIEŃ SŁONECZNEJ DUSZY,
+- Na 7. poziomie: NAKŁDADANIE RĄK,
+- Na 8. poziomie: -1 do opóźnienia oraz rzucać WIĘKSZE SŁOŃCE, raz dziennie,
+- Na 9. poziomie: +1 do wszystkich rzutów obronnych, niewrażliwość na zauroczenie,
+- Na 10. poziomie: Dodatkowe użycie PROMIEŃ SŁONECZNEJ DUSZY,
+- Na 11. poziomie: Niewrażliwość na trucizny,
+- Na 12. poziomie: Kolejne -1 do opóźnienia,
+- Na 13. poziomie: Może użyć SNOP SŁONECZNEJ DUSZY, raz dziennie,
+- Na 14. poziomie: +3% odporności na magię na poziom (zaczynając z +42% na 14. poziomie),
+- Na 15. poziomie: Dodatkowe użycie PROMIEŃ SŁONECZNEJ DUSZY,
+- Na 20. poziomie: Mnich uzyskuje odporność na niemagiczną broń,
+
+Wady:
+- Nie może używać zdolności DRŻĄCA DŁOŃ,
+- Nie może używać zdolności OGŁUSZAJĄCY CIOS,
+
+Musi mieć charakter praworządny DOBRY

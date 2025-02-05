@@ -1,0 +1,16 @@
+KOŚĆ ZDROWIA: K6
+
+CECHY KLASOWE:
+- Nie może nosić zbroi cięższej niż kolczuga, oraz tarczy większej niż w puklerz,
+- Może osiągnąć wyszkolenie (1 punkt) w dowolnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki
+- Ma dostęp do Kradzieży kieszonkowej,
+- Zwiększony współczynnik wiedzy,
+- Może rzucać zaklęcia wtajemniczeń od 2 poziomu,
+- Umiejętność pieść barda zostaje zastąpiona PIEŚNIĄ SKALDA, która ma większy potencja bojowy i obronny,
+- +1 do testów trafienie i obrażeń,
+
+Wady:
+- Kradzież kieszonkowa na poziomie 1/4 normalnej wartości
+
+Musi mieć charakter dowolny neutralny

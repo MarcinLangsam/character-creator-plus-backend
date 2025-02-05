@@ -1,9 +1,13 @@
+KOŚĆ ZDROWIA: K8
+
 CECHY KLASOWE:
 - Może nosić zbroje tylko niewykonane z metalu, puklerzy i tarcz niewykonanych z metalu,
 - Może używać tylko: sejmitar, sztylet, maczuga, włócznia, kij, strzałka, proca,
-- Może osiągnąć wyszkolenie(1 punkt) w dowolnym rodzaju broni,
-- Może osiągnąć wyszkolenie(1 punkt) do każdego stylu walki
+- Może osiągnąć wyszkolenie (1 punkt) w dowolnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki
 - Może rzucać zaklęcia druida,
-- Musi mieć charakter neutralny,
+- Na 7. poziomie raz dziennie może przemieniać się w wilka/niedźwiedzia,
+- Na 15. poziomie staje się niewrażliwy na trucizny,
+- Na 15. poziomie zyskuje +10% odporności na zimno, ogień, elektryczność i kwas, a następnej +10% na poziomie 21 i 24
 
-KOŚĆ ZDROWIA: K8
+Musi mieć charakter neutralny,

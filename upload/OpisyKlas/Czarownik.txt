@@ -1,9 +1,9 @@
+KOŚĆ ZDROWIA: K4
+
 CECHY KLASOWE:
 - Nie może nosić żadnej zbroi
 - Może używać tylko: sztylet, kij, strzałka, proca,
-- Może osiągnąć wyszkolenie(1 punkt) w dostępnych rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) w dostępnych rodzaju broni,
 - Nie może przydzielać punktu do stylów walki
 - Może rzucać zaklęcia wtajemniczeń,
 - Nie może przepisywać zwojów, za to uczy się zaklęć co poziom i rzuca je bez zapamiętywania
-
-KOŚĆ ZDROWIA: K4

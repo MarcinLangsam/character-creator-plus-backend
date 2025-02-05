@@ -1,7 +1,7 @@
+KOŚĆ ZDROWIA: K10
+
 CECHY KLASOWE:
 - Może nosić hełmy,
 - Może używać każdego typu broni i zbroi,
-- Może osiągnąć wielkie mistrzostwo(5 punktów) w dowolnym rodzaju broni,
-- Może osiągnąć specjalizacje(2 punkty) do każdego stylu walki, a do styli walki dwoma broniami 3 punkty
-
-KOŚĆ ZDROWIA: K10
+- Może osiągnąć wielkie mistrzostwo (5 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a do styli walki dwoma broniami 3 punkty

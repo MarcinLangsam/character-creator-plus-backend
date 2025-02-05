@@ -1,0 +1,25 @@
+KOŚĆ ZDROWIA: K8
+
+CECHY KLASOWE:
+- Może używać puklerzy i tarcz niewykonanych z metalu,
+- NIE może nosić zbroi cięższej niż skórzana
+- Może używać tylko: sejmitar, sztylet, maczuga, włócznia, kij, strzałka, proca,
+- Może osiągnąć wyszkolenie (1 punkt) w dowolnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki
+- Może rzucać zaklęcia druida,
+- Na 7. poziomie raz dziennie może przemieniać się w wilka/niedźwiedzia/pająka mieczowca/małą wiwernę/ognistą salmandrę,
+- Na 15. poziomie staje się niewrażliwy na trucizny,
+- Na 15. poziomie zyskuje +10% odporności na zimno, ogień, elektryczność i kwas, a następnej +10% na poziomie 21 i 24,
+- Na 19. poziomie zyskuje dodatkowe użycie zdolności zmiana kształtu,
+- Może dodać sześć czarów wtajemniczeń do swojego repertuary:
+	1. poziom: ZMIENNOBARWNA KULA
+	2. poziom: PAJĘCZYNA
+	3. poziom: BŁYSKAWICA
+	4. poziom: ULEPSZONA NIEWIDZALNOŚĆ
+	5. poziom: CHAOS
+	6. poziom: WYŁADOWANIE ŁAŃCUCHOWE
+
+Wady:
+- Podczas tworzenia postaci jego Siła i Kondycja zostają zmniejszone o 2!
+
+Musi mieć charakter neutralny,

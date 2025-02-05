@@ -1,0 +1,16 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego typu broni i zbroi,
+- Może osiągnąć Wielkie Mistrzostwo (5 punktów) w prawie dowolnym rodzaju broni (berserker, ograniczenie broni dystansowych),
+- Może osiągnąć Specjalizacje (2 punkty) do każdego stylu walki, a do styli walki dwoma broniami 3 punkty
+- Raz dziennie na 4 poziomy, poczynając od 1. poziomu, może wpaść w SZAŁ,
+
+SZAŁ: Na jedną turę berserker zyskuje premię +2 do testów trafienia, obrażeń oraz KP a także staje się niewrażliwy na zauroczenie, zamęt, strach, ogłupienie, unieruchomienie, uwięzienie, wyssanie poziomu, labirynt, ogłuszenie oraz sen. Zyskuje też 15 tymczasowych punktów życia.
+
+Wady:
+- Po szale, otrzymuje karę -2 do testów trafienia oraz KP do odpoczynku,
+- NIE może osiągnąć Specjalizacji w broniach dystansowych,
+
+Wymagany charakter: dowolny niepraworządny,

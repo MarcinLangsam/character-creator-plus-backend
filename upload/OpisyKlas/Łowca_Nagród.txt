@@ -1,0 +1,21 @@
+KOŚĆ ZDROWIA: K6
+
+CECHY KLASOWE:
+- Nie może nosić zbroi cięższej niż skórzana ćwiekowana, oraz tarczy większej niż puklerz,
+- Może używać tylko: miecz długi, miecz krótki, katana, sejmitar, sztylet, maczuga, kij, krótki łuk, kusza, strzałka, proca.
+- Może osiągnąć wyszkolenie (1 punkt) w dowolnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki
+- Ma dostęp do umiejętności złodziejskich
+- Może użyć ciosu w plecy, zadający następujące obrażenia:
+	Poziom 1-4: x2
+	Poziom 5-8: x3
+	Poziom 9-12: x4
+	Poziom 13+: x5
+- Może użyć zdolności zastawiania SPECJALNYCH pułapek, raz dziennie i kolejne użycie co 5 poziomów,
+- +15% do Zastawiania Pułapek
+
+Wady:
+- Co poziom dostaje tylko 20 punktów umiejętności złodziejskich (zamiast standardowych 25)
+
+
+Nie może być praworządny dobry

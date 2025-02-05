@@ -1,0 +1,19 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- NIE może posługiwać się bronią metalową,
+- NIE może nosić zbroi cięższej niż skórzana ćwiekowana,
+- Może osiągnąć specjalizacje (2 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a styli walki dwoma broniami rozpoczyna z 2 punktami i może przydzielić 3 punkt,
+- Może wybrać wroga rasowego w walce z którym będzie otrzymywał premię +4 do trafień i obrażeń,
+- Może rzucać ZAUROCZENIE ZWIERZĘCIA,
+- Może kryć się w cieniu i otrzymuje do tego bonus +15%,
+- Może rzucać czary druida od 8 poziomu,
+- Może użyć zdolności PRZYWOŁANIE CHOWAŃCA
+- Na 8. poziomie może rzucić zaklęcie: PRZYWOŁANIE ZWIERZĄT I
+- Na 10. poziomie może rzucić zaklęcie: PRZYWOŁANIE ZWIERZĄT II
+- Na 12. poziomie może rzucić zaklęcie: PRZYWOŁANIE ZWIERZĄT III
+
+
+Musi mieć charakter dobry

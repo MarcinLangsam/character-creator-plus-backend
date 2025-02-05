@@ -1,0 +1,17 @@
+KOŚĆ ZDROWIA: K4
+
+CECHY KLASOWE:
+- Nie może nosić żadnej zbroi,
+- Może używać tylko: sztylet, kij, strzałka, proca,
+- Może osiągnąć wyszkolenie (1 punkt) w dostępnych rodzaju broni,
+- Nie może przydzielać punktu do stylów walki,
+- Może rzucać zaklęcia wtajemniczeń,
+- Może rzucić jedno dodatkowe zaklęcie na każdy poziom,
+- Może rzucić 1. poziomowy czar LEKKOMYŚLNE ZAKLĘCIE NAHALA
+- Może rzucić 2. poziomowy czar TARCZA CHOSU
+- Może rzucić 7. poziomowy czar ULEPSZONA TARCZA CHOSU
+- Istnieje 5% szans wywołania fali dzikiej energii po rzuceniu czaru
+
+FALA DZIKIEJ ENERGI: Sprawia, że rzucony czar tworzy całkowicie losowy magiczny efekt, może być on zarówno szkodliwy jak i korzystny,
+
+- Za każdym razem gdy dziki mag rzuci zaklęcie poziom tego zaklęcia nieznacznie się różni. Może on być niższy lub wyższy o 5 poziomów od aktualnego poziomu maga.

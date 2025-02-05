@@ -1,0 +1,26 @@
+KOŚĆ ZDROWIA: K6
+
+CECHY KLASOWE:
+- Nie może nosić żadnej zbroi
+- Może używać tylko: sztylet, kij, strzałka, proca,
+- Może osiągnąć wyszkolenie (1 punkt) w dostępnych rodzaju broni,
+- Nie może przydzielać punktu do stylów walki
+- Może rzucać zaklęcia wtajemniczeń,
+- Nie może przepisywać zwojów, za to uczy się zaklęć co poziom i rzuca je bez zapamiętywania
+
+- 1. poziom: +1 do KP,
+- 3. poziom: Może użyć zdolności OGNISTY ODDECH, raz dziennie,
+- 4. poziom: +25% odporności na ogień,
+- 5. poziom: +1 do KP, +1 do Kondycji,
+- 6. poziom: OGNISTY ODDECH zwiększenie obrażeń,
+- 8. poziom: odporność na ogień wzrasta do +50%,
+- 9. poziom: OGNISTY ODDECH zwiększenie obrażeń,
+- 10. poziom: +1 do KP,
+- 12. poziom: OGNISTY ODDECH zwiększenie obrażeń oraz odporność na ogień wzrasta do +75%
+- 15. poziom: OGNISTY ODDECH zwiększenie obrażeń oraz +1 od KP, +1 do Kondycji,
+- 16. poziom: odporność na ogień wzrasta do +100%,
+- 18. poziom: OGNISTY ODDECH zwiększenie obrażeń,
+- 20. poziom: +1 do KP,
+
+Wady:
+- Może rzucać o jedno zaklęcia mniej dziennie niż czarownik,

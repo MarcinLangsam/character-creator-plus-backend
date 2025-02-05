@@ -1,0 +1,20 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego typu broni,
+- Nie może nosić zbroi cięższych niż skórzana ćwiekowana
+- Może osiągnąć specjalizacje (2 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a styli walki dwoma broniami rozpoczyna z 2 punktami i może przydzielić 3 punkt,
+- Może wybrać wroga rasowego w walce z którym będzie otrzymywał premię +4 do trafień i obrażeń,
+- Może rzucać ZAUROCZENIE ZWIERZĘCIA,
+- Może kryć się w cieniu i otrzymuje do tego bonus +20%,
+- Może użyć Ciosu w plecy, ale zadaje mniejsze obrażenia niż złodzieje:
+	Poziom 1-8: x2
+	Poziom: 9-16: x3
+	Poziom 17+: x4
+- Może rzucać czary druida od 8 poziomu,
+- Na 12. poziomie może rzucić PRZYŚPIESZENIE RUCHÓW, OCHRONA PRZED ZWYKŁYMI POCISKAMI oraz MNIEJSZE ODCHYLENIE CZARU, 
+
+
+Musi mieć charakter dobry

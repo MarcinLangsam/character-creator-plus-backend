@@ -1,0 +1,18 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego typu broni i zbroi,
+- Może osiągnąć specjalizacje (2 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a w stylu walki dwoma broniami może przydzielić 3 punkty
+- Może rzucać LECZENIE CHORÓB, Wykrycie Zła
+- Może Odpędzać nieumarłych
+- Może rzucać czary kałana od 9 poziomu
+- +3 do testów trafienia i obrażeń przeciwko nieumarłym,
+- Niewrażliwość na unieruchomienie,
+- Niewrażliwość na wyssanie poziomów,
+
+Wady:
+- NIE może korzystać ze zdolności NAKŁDANIE RĄK,
+
+Musi mieć charakter praworządny dobry

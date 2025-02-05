@@ -1,0 +1,15 @@
+KOŚĆ ZDROWIA: K12
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego typu broni i zbroi,
+- Może osiągnąć Prawdziwe Mistrzostwo (4 punktów) w posługiwaniu się toporem i młotem bojowym,
+- Może osiągnąć Specjalizacje (2 punktów) w posługiwaniu się każdą inną bronią,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a do styli walki dwoma broniami 3 punkty
+- Na każde 5 poziomów zyskuje 5% odporności na obrażenia obuchowe, sieczne, kłute i pociski, aż do maksymalnie 20% na 20. poziomie
+- Może użyć zdolności POZYCJA OBRONNA, raz dziennie, Zyskuje 1 użycie na 1. poziomie i kolejne, co cztery poziomy.
+
+POZYCJA OBRONNA: Na jedną turę zyskuje +50% odporności na wszystkie rodzaje fizycznych obrażeń oraz +2 do rzutów obronnych ale prędkość poruszania się spada o 50%.
+
+Wady:
+- Wymagana rasa: Krasnolud

@@ -1,0 +1,17 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- NIE może używać zbroi,
+- NIE może używać rękawic ani bransolet,
+- Może używać każdego typu broni opór broni dystansowych
+- Może osiągnąć wielkie mistrzostwo (5 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a do styli walki dwoma broniami 3 punkty
+- +2 do KP,
+- +1 do testów trafienia, co trzy poziomy,
+- Premia -1 do opóźnienia, co cztery poziomy,
+- Może używać raz dziennie na 4 poziomy zdolności KAI
+
+
+KAI: Przez 10 sekund wszystkie celne ataki zadają maksymalne obrażenia.
+
+Wymagany charakter: dowolny niechaotyczny,

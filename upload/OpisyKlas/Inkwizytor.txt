@@ -1,0 +1,18 @@
+KOŚĆ ZDROWIA: K10
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego typu broni i zbroi,
+- Może osiągnąć specjalizacje (2 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a w stylu walki dwoma broniami może przydzielić 3 punkty
+- Może rzucać LECZENIE CHORÓB, WYKRYCIE ZŁA
+- Raz dziennie na 4. poziomy może używać ROZPROSZENIE MAGII (zdolność ta ma opóźnienie 1 i działa z siłą równą poziom Inkwizytora x2)
+- Raz dziennie na 4. poziomy może używać PRAWDZIWE WIDZENIE
+- Nie wrażliwość na unieruchomienie i zauroczenie
+
+Wady:
+- NIE może korzystać ze zdolności Odpędzanie nieumarłych,
+- NIE może korzystać ze zdolności NAKŁADANIE RĄK,
+- NIE może rzucać czarów kapłańskich,
+
+Musi mieć charakter praworządny dobry

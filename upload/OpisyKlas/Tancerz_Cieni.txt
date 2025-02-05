@@ -1,0 +1,23 @@
+KOŚĆ ZDROWIA: K6
+
+CECHY KLASOWE:
+- Nie może nosić zbroi cięższej niż skórzana ćwiekowana, oraz tarczy większej niż puklerz,
+- Może używać tylko: miecz długi, miecz krótki, katana, sejmitar, sztylet, maczuga, kij, krótki łuk, kusza, strzałka, proca.
+- Może osiągnąć wyszkolenie (1 punkt) w dowolnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki
+- Ma dostęp do umiejętności złodziejskich
+- +10% do Krycia się w cieniu
+- Tancerz Cieni może skryć się w cieniu nawet gdy jest obserwowany,
+- Może rzucić CIENISTY KROK, raz dziennie. Zyskuje 1 użycie co 5 poziomów
+- +1 do rzutów obronnych
+
+Wady:
+- Może użyć ciosu w plecy ale z niższymi mnożnikami, zadający następujące obrażenia:
+	Poziom 1-4: x1 (brak mnożnika)
+	Poziom 5-8: x2
+	Poziom 9-12: x3
+	Poziom 13+: x4
+- Co poziom dostaje tylko 20 punktów umiejętności złodziejskich (zamiast standardowych 25)
+- NIE może używać zdolności zastawianie pułapek
+
+Wymagany charakter dowolny nie-praworządny

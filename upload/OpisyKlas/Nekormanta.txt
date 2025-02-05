@@ -1,0 +1,16 @@
+KOŚĆ ZDROWIA: K4
+
+CECHY KLASOWE:
+- Nie może nosić żadnej zbroi,
+- Może używać tylko: sztylet, kij, strzałka, proca,
+- Może osiągnąć wyszkolenie (1 punkt) w dostępnych rodzaju broni,
+- Nie może przydzielać punktu do stylów walki,
+- Może rzucać zaklęcia wtajemniczeń,
+- Może rzucić jedno dodatkowe zaklęcie na każdy poziom,
+- Otrzymuje premię +15% podczas próby zapisywania zwojów z czarami ze szkoły Nekromancji,
+- Otrzymuje premię +2 do rzutów obronnych przeciw czarom ze szkoły Nekromancji,
+- Cele otrzymują karę -2 do rzutów obronnych przeciw czarom ze szkoły Nekromancji,
+
+Wady:
+- Nie może uczyć się ani rzucać czarów ze szkoły Iluzji,
+- Otrzymuje karę -15% podczas próby przepisywania zwojów z czarami innych szkół magii,

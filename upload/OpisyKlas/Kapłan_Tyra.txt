@@ -1,0 +1,14 @@
+KOŚĆ ZDROWIA: K8
+
+CECHY KLASOWE:
+- Może nosić hełmy,
+- Może używać każdego zbroi,
+- Nie może używać borni siecznej/kłutej,
+- Może osiągnąć wyszkolenie (1 punkt) każdym w dostępnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki
+- Może Odpędzać nieumarłych
+- Może rzucać czary kapłańskie
+- Może rzucić EGZALTACJE, raz dziennie na 5 poziomów,
+- Może rzucić BOSKIE WZGLĘDNY, raz dziennie na 10 poziomów
+
+Musi być praworządny dobry, neutralny dobry lub praworządny neutralny

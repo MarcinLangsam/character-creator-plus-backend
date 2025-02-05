@@ -1,0 +1,17 @@
+KOŚĆ ZDROWIA: K6
+
+CECHY KLASOWE:
+- Nie może nosić zbroi cięższej niż kolczuga, oraz tarczy większej niż w puklerz,
+- Może osiągnąć wyszkolenie (1 punkt) w dowolnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki, a 3 punkty na walkę dwoma broniami,
+- Ma dostęp do Kradzieży kieszonkowej,
+- Zwiększony współczynnik wiedzy,
+- Może rzucać zaklęcia wtajemniczeń od 2 poziomu
+- Może używać PIEŚŃ BARDA
+- Raz dziennie na 4 poziomy może użyć umiejętności PIRUET OFENSYWNY i PIRUET DEFENSYWNY
+
+Wady:
+- Dysponuje tylko połową normalnej wiedzy
+- Kradzież kieszonkowa na poziomie normalnej wartości
+
+Musi mieć charakter dowolny neutralny

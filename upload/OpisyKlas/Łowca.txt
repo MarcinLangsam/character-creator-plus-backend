@@ -1,13 +1,14 @@
+KOŚĆ ZDROWIA: K10
+
 CECHY KLASOWE:
 - Może nosić hełmy,
 - Może używać każdego typu broni i zbroi,
-- Może osiągnąć specjalizacje(2 punktów) w dowolnym rodzaju broni,
-- Może osiągnąć specjalizacje(2 punkty) do każdego stylu walki, a styli walki dwoma broniami rozpoczyna z 2 punktami i może przydzielić 3 punkt
-- Może wybrać wroga rasowego w walce z którym będzie otrzymywał premię +4 do trafień i obrażeń
-- Może rzucać Zauroczenie zwierzęcia
-- Może kryć się w cieniu
-- Może rzucać czary druida od 8 poziomu
-- Musi mieć charakter dobry
+- Może osiągnąć specjalizacje (2 punktów) w dowolnym rodzaju broni,
+- Może osiągnąć specjalizacje (2 punkty) do każdego stylu walki, a styli walki dwoma broniami rozpoczyna z 2 punktami i może przydzielić 3 punkt,
+- Może wybrać wroga rasowego w walce z którym będzie otrzymywał premię +4 do trafień i obrażeń,
+- Może rzucać ZAUROCZENIE ZWIERZĘCIA,
+- Może kryć się w cieniu,
+- Może rzucać czary druida od 8 poziomu,
 
 
-KOŚĆ ZDROWIA: K10
+Musi mieć charakter dobry

@@ -1,0 +1,18 @@
+KOŚĆ ZDROWIA: K8
+
+CECHY KLASOWE:
+- Może używać puklerzy i tarcz niewykonanych z metalu,
+- Może używać tylko: sejmitar, sztylet, maczuga, włócznia, kij, strzałka, proca,
+- Może osiągnąć wyszkolenie (1 punkt) w dowolnym rodzaju broni,
+- Może osiągnąć wyszkolenie (1 punkt) do każdego stylu walki
+- Może rzucać zaklęcia druida,
+- Na 7. poziomie raz dziennie może przemieniać się w wilka/niedźwiedzia,
+- Na 15. poziomie staje się niewrażliwy na trucizny,
+- Na 15. poziomie zyskuje +10% odporności na zimno, ogień, elektryczność i kwas, a następnej +10% na poziomie 21 i 24,
+- Raz dziennie na dwa poziomy może zmienić się w wilkołaka,
+- Na 13. poziomie uzyskuje zdolność przemiany w większego wilkołaka raz dziennie,
+
+Wady:
+- NIE może nosić żadnej zbroi
+
+Musi mieć charakter neutralny,
