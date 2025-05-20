@@ -14,12 +14,17 @@ Podstawowa funkcjonalność:
 - dostępność aplikacji w przeglądarce, co pozwoli użytkownikom na planowanie i modyfikacje postaci bez konieczno±ci uruchamiania gry
 
 Wykorzystane technologie:
+
 FRONTED:
+
 - React
 - Bootstrap
+
 BACKEND:
+
 - NestJS
 - Prisma
+
 BAZA DANYCH: MySQL
 
 Wygląd aplikacji:
